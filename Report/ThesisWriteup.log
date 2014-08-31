@@ -1,0 +1,631 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.2.11)  28 JUN 2014 13:08
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ThesisWriteup.tex
+(./ThesisWriteup.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, uk
+english, loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\enitkv@toks@=\toks14
+\labelindent=\skip43
+\enit@outerparindent=\dimen103
+\enit@toks=\toks15
+\enit@inbox=\box26
+\enitdp@description=\count87
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
+Package: tabulary 2008/12/01 v0.9 tabulary package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen104
+\extrarowheight=\dimen105
+\NC@list=\toks17
+\extratabsurround=\skip44
+\backup@length=\skip45
+)
+\TY@count=\count88
+\TY@linewidth=\dimen106
+\tymin=\dimen107
+\tymax=\dimen108
+\TY@tablewidth=\dimen109
+) (./algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count89
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2011/09/21 ver 4.0
+
+Examine \normalsize starts \@setfontsize size may be \@xiipt. 
+Examine \small starts \@setfontsize size may be \@xipt. 
+Examine \footnotesize starts \@setfontsize size may be \@xpt. 
+Examine \large starts \@setfontsize size may be \@xivpt. 
+Examine \Large starts \@setfontsize size may be \@xviipt. 
+Examine \LARGE starts \@setfontsize size may be \@xxpt. 
+Examine \scriptsize starts \@setfontsize size may be \@viiipt. 
+Examine \tiny starts \@setfontsize size may be \@vipt. 
+Examine \huge starts \@setfontsize size may be \@xxvpt. 
+Examine \Huge starts \@setfontsize size may be \@xxvpt. )
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+\skiptotal=\skip46
+\skiplinenumber=\skip47
+\skiprule=\skip48
+\skiphlne=\skip49
+\skiptext=\skip50
+\skiplength=\skip51
+\algomargin=\skip52
+\skipalgocfslide=\skip53
+\algowidth=\dimen110
+\inoutsize=\dimen111
+\inoutindent=\dimen112
+\interspacetitleruled=\dimen113
+\interspacealgoruled=\dimen114
+\interspacetitleboxruled=\dimen115
+\algocf@inoutbox=\box27
+\algocf@inputbox=\box28
+\AlCapSkip=\skip54
+\AlCapHSkip=\skip55
+\algoskipindent=\skip56
+\algocf@nlbox=\box29
+\algocf@hangingbox=\box30
+\algocf@untilbox=\box31
+\algocf@skipuntil=\skip57
+\algocf@capbox=\box32
+\algoheightruledefault=\skip58
+\algoheightrule=\skip59
+\algotitleheightruledefault=\skip60
+\algotitleheightrule=\skip61
+\c@algocfline=\count90
+\c@algocfproc=\count91
+\c@algocf=\count92
+\algocf@algoframe=\box33
+\algocf@algobox=\box34
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count93
+))
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen118
+\epsfysize=\dimen119
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box35
+\shadowsize=\dimen120
+\@Sbox=\box36
+\do@VerbBox=\toks19
+\the@fancyput=\toks20
+\this@fancyput=\toks21
+\EndVerbatimTokens=\toks22
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2009/07/02 v2.20.1
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip62
+\thm@postskip=\skip63
+\thm@headsep=\skip64
+\dth@everypar=\toks28
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks29
+\verbatim@line=\toks30
+\verbatim@in@stream=\read2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen121
+\captionmargin@=\dimen122
+\captionwidth=\dimen123
+\caption@indent=\dimen124
+\caption@parindent=\dimen125
+\caption@hangindent=\dimen126
+)
+\c@ContinuedFloat=\count94
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2012/01/12 v1.1d Sub-captions (AR)
+\c@subfigure=\count95
+\c@subtable=\count96
+)
+\c@theorem=\count97
+\c@exmp=\count98
+
+(./ThesisWriteup.aux)
+\openout1 = `ThesisWriteup.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count99
+\scratchdimen=\dimen127
+\scratchbox=\box37
+\nofMPsegments=\count100
+\nofMParguments=\count101
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count102
+\MPscratchDim=\dimen128
+\MPnumerator=\count103
+\makeMPintoPDFobject=\count104
+\everyMPtoPDFconversion=\toks32
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 82.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+ [2]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [3]
+Overfull \hbox (3.36093pt too wide) in paragraph at lines 159--164
+[]\OT1/cmr/m/n/12 Several so-lu-tions have been pro-posed to ad-dress the trans
+-port layer prob-lems in UWSNs.
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 169.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 169.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
+
+ []
+
+[8] [9] [10] [11] [12] <Example1.pdf, id=50, 497.53787pt x 249.79547pt>
+File: Example1.pdf Graphic file (type pdf)
+
+<use Example1.pdf>
+Package pdftex.def Info: Example1.pdf used on input line 500.
+(pdftex.def)             Requested size: 361.34723pt x 180.68352pt.
+ [13 <./Example1.pdf>]
+
+LaTeX Warning: Reference `sub:Ald' on page 14 undefined on input line 518.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (0.92496pt too wide) in paragraph at lines 579--587
+ [][] 
+ []
+
+
+Overfull \hbox (0.92496pt too wide) in paragraph at lines 597--605
+ [][] 
+ []
+
+
+Overfull \hbox (29.10547pt too wide) in paragraph at lines 615--623
+ [][] 
+ []
+
+
+Overfull \hbox (6.7999pt too wide) in paragraph at lines 652--660
+ [][] 
+ []
+
+
+Overfull \hbox (4.70209pt too wide) in paragraph at lines 576--668
+[]$[]$$[]$$[]$$[]$$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--668
+
+ []
+
+[14] [15] [16] [17] <verification.pdf, id=82, 223.10498pt x 68.43713pt>
+File: verification.pdf Graphic file (type pdf)
+
+<use verification.pdf>
+Package pdftex.def Info: verification.pdf used on input line 778.
+(pdftex.def)             Requested size: 216.82008pt x 43.36414pt.
+
+
+Package caption Warning: \label without proper \caption on input line 781.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:var' on page 18 undefined on input line 785.
+
+[18 <./verification.pdf>]
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 817--846
+[]$[]$ $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--846
+
+ []
+
+<Edge_selection1.pdf, id=98, 431.83823pt x 202.57384pt>
+File: Edge_selection1.pdf Graphic file (type pdf)
+
+<use Edge_selection1.pdf>
+Package pdftex.def Info: Edge_selection1.pdf used on input line 850.
+(pdftex.def)             Requested size: 433.64262pt x 202.36623pt.
+
+Overfull \hbox (10.86601pt too wide) in paragraph at lines 850--851
+[][] 
+ []
+
+<netI.pdf, id=99, 483.65903pt x 196.96988pt>
+File: netI.pdf Graphic file (type pdf)
+ <use netI.pdf>
+Package pdftex.def Info: netI.pdf used on input line 859.
+(pdftex.def)             Requested size: 433.6212pt x 202.35527pt.
+
+Overfull \hbox (10.84459pt too wide) in paragraph at lines 859--860
+[][] 
+ []
+
+<NetworkII.pdf, id=100, 542.70638pt x 234.05493pt>
+File: NetworkII.pdf Graphic file (type pdf)
+ <use NetworkII.pdf>
+Package pdftex.def Info: NetworkII.pdf used on input line 863.
+(pdftex.def)             Requested size: 433.62741pt x 195.13338pt.
+
+Overfull \hbox (10.8508pt too wide) in paragraph at lines 863--864
+[][] 
+ []
+
+<NetworkIII.pdf, id=101, 437.31319pt x 292.22646pt>
+File: NetworkIII.pdf Graphic file (type pdf)
+ <use NetworkIII.pdf>
+Package pdftex.def Info: NetworkIII.pdf used on input line 867.
+(pdftex.def)             Requested size: 433.64871pt x 187.90271pt.
+
+Overfull \hbox (10.8721pt too wide) in paragraph at lines 867--868
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--871
+[]$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--871
+[]$
+ []
+
+
+LaTeX Warning: Float too large for page by 10.46132pt on input line 871.
+
+<random.pdf, id=102, 361.35pt x 216.81pt>
+File: random.pdf Graphic file (type pdf)
+ <use random.pdf>
+Package pdftex.def Info: random.pdf used on input line 875.
+(pdftex.def)             Requested size: 216.81168pt x 180.68336pt.
+
+<Greedy.pdf, id=103, 361.35pt x 216.81pt>
+File: Greedy.pdf Graphic file (type pdf)
+ <use Greedy.pdf>
+Package pdftex.def Info: Greedy.pdf used on input line 881.
+(pdftex.def)             Requested size: 216.81168pt x 180.68336pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 874--886
+[]$[]$ $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--889
+
+ []
+
+[19] [20 <./Edge_selection1.pdf>] [21 <./netI.pdf> <./NetworkII.pdf> <./Network
+III.pdf>] <Relay.pdf, id=168, 404.46335pt x 203.25827pt>
+File: Relay.pdf Graphic file (type pdf)
+ <use Relay.pdf>
+Package pdftex.def Info: Relay.pdf used on input line 910.
+(pdftex.def)             Requested size: 433.64171pt x 180.67908pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22 <./random.pdf> <./Greedy.pdf
+
+pdfTeX warning: pdflatex (file ./Greedy.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>] [23 <./Relay.pdf>]
+Overfull \hbox (0.92496pt too wide) in paragraph at lines 943--951
+ [][] 
+ []
+
+
+Overfull \hbox (0.92496pt too wide) in paragraph at lines 960--968
+ [][] 
+ []
+
+
+Overfull \hbox (30.99438pt too wide) in paragraph at lines 977--985
+ [][] 
+ []
+
+
+Overfull \hbox (6.7999pt too wide) in paragraph at lines 1014--1022
+ [][] 
+ []
+
+
+Overfull \hbox (4.70209pt too wide) in paragraph at lines 940--1029
+[]$[]$$[]$$[]$$[]$$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 940--1029
+
+ []
+
+[24] [25] [26]
+Overfull \hbox (207.18549pt too wide) in paragraph at lines 1144--1152
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1141--1154
+
+ []
+
+<NetworkI_woR.pdf, id=215, 361.35pt x 216.81pt>
+File: NetworkI_woR.pdf Graphic file (type pdf)
+ <use NetworkI_woR.pdf>
+Package pdftex.def Info: NetworkI_woR.pdf used on input line 1167.
+(pdftex.def)             Requested size: 433.62335pt x 187.9119pt.
+ [27]
+<NReq.pdf, id=219, 538.31564pt x 176.34474pt>
+File: NReq.pdf Graphic file (type pdf)
+ <use NReq.pdf>
+Package pdftex.def Info: NReq.pdf used on input line 1184.
+(pdftex.def)             Requested size: 397.48486pt x 130.08405pt.
+
+Overfull \hbox (5.26273pt too wide) in paragraph at lines 1191--1192
+\OT1/cmr/bx/n/12 Example 6.1. \OT1/cmr/m/n/12 Fig. 11[] il-lus-trates a net-wor
+k of $7$ nodes. Lo-cal-ity set of nodes $\OML/cmm/m/it/12 v[]; v[]; v[]; v[]; v
+[]; v[]$
+ []
+
+[28 <./NetworkI_woR.pdf> <./NReq.pdf>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29] [30]
+
+Package caption Warning: \label without proper \caption on input line 870.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:NTRK' on page 31 undefined on input line 1286.
+
+
+LaTeX Warning: Reference `fig:CVC' on page 31 undefined on input line 1286.
+
+<ConVsCom_woR.pdf, id=253, 361.35pt x 216.81pt>
+File: ConVsCom_woR.pdf Graphic file (type pdf)
+ <use ConVsCom_woR.pdf>
+Package pdftex.def Info: ConVsCom_woR.pdf used on input line 1289.
+(pdftex.def)             Requested size: 433.62335pt x 202.36563pt.
+
+Overfull \hbox (10.84674pt too wide) in paragraph at lines 1289--1290
+[][] 
+ []
+
+[31]
+Overfull \vbox (244.66885pt too high) has occurred while \output is active []
+
+
+[32 <./ConVsCom_woR.pdf>] (./ThesisWriteup.bbl [33] [34]
+Underfull \hbox (badness 10000) in paragraph at lines 89--95
+[]\OT1/cmr/m/n/12 Hydro In-ter-na-tional.  Evo-logic Un-der-wa-ter Acous-tic Mo
+dems.  $\OT1/cmtt/m/n/12 http :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--95
+\OT1/cmtt/m/n/12 / / www . hydro-[]international . com / files / productsurvey 
+_ v _ pdfdocument _ 15 . pdf$\OT1/cmr/m/n/12 ,
+ []
+
+[35]) [36] (./ThesisWriteup.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5218 strings out of 495037
+ 76881 string characters out of 3181390
+ 168302 words of memory out of 3000000
+ 8330 multiletter control sequences out of 15000+200000
+ 14784 words of font info for 57 fonts, out of 3000000 for 9000
+ 22 hyphenation exceptions out of 8191
+ 38i,27n,38p,1389b,591s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on ThesisWriteup.pdf (36 pages, 611055 bytes).
+PDF statistics:
+ 332 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+

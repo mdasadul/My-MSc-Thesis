@@ -1,0 +1,21 @@
+
+plotName= "conn-vs-Comp-woR"
+# inFile=   plotName.".pdata"
+outFile=  plotName.".eps"
+
+set key spacing 3.5
+set key at 8.5,0.3
+set key font "Times,24"
+
+set term  postscript eps enhanced
+set out   outFile
+
+#set grid lt 0 lw 0
+set grid
+set xlabel "Component Size" font "Times,24"
+set ylabel "Connectivity"      font "Times,24"
+
+set ytics 0,.1,1
+
+plot '1Tree_wOR.txt' pt 5 title '1-Tree'  w linespoints,'2Tree_wOR.txt'  pt 6 title '2-Tree'  w linespoints,'3Tree_wOR.txt'  pt 8  title '3-Tree' w linespoints
+

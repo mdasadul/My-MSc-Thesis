@@ -1,0 +1,14 @@
+#set terminal postfile       (These commented lines would be used to )
+#set output  "d1_plot.ps"    (generate a postscript file.            )
+#set title "Connectivity vs. Component Size"
+set xlabel "Component Size"
+set ylabel "Connectivity"
+set grid
+set key at 8,0.4
+set ytics 0,.1,1
+plot '1Tree_wOR.txt' lc 'balck' pt 8 pi -0.5 title '1-tree'  w linespoints ,'2Tree_wOR.txt' lc 'red' pt 5 pi -0.1 title '2-tree'  w linespoints,'3Tree_wOR.txt'  lc 'black' pt 6 pi -0.1 title '3-tree' w linespoint,'1Tree_wR.txt' lc 'balck' pt 4 pi -0.5 title '1-tree_R'  w linespoints ,'2Tree_wR.txt' lc 'red' pt 7 pi -0.1 title '2-tree_R'  w linespoints,'3Tree_wR.txt'  lc 'black' pt 9 pi -0.1 title '3-tree_R' w linespoint
+set term pdf 
+set output "Everything.pdf"
+replot
+set term wxt
+pause -1 "Hit any key to continue"

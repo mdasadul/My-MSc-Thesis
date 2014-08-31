@@ -1,0 +1,453 @@
+
+\section{Exact Tree Algorithm}
+
+In this section, we first identify a class of probabilistic networks
+that have tree-like topologies.
+%
+Next, we present an efficient algorithm that computes the exact
+$Rel(G,\nReq)$ on such class of networks.
+%
+Our algorithm is conceptually simple, and the design is optimized to
+solve the $\ACONN$ problem so as to alleviate the need for implementing
+a restricted version of the algorithm.
+% ------------------------------
+
+\subsection{Probabilistic Networks with Tree T̠o̠p̠o̠l̠o̠g̠i̠e̠s̠}
+
+To start, we say that a probabilistic network $G=(V,E_G,\loc,p)$ has
+the topology of a conventional tree $T=(V,E_T)$ if whenever $E_G(x[i],y[j])= 1$
+then $(x,y) \in E_T$.
+%
+Note that the definition allows two nodes $x$ and $y$ to be adjacent in
+$T$, and yet they can take positions, say $x[i]$ and $y[j]$, such that
+$E_G (x[i],y[j])= 0$.
+%
+Thus, each state $S$ of $G$ gives the tree $T$ with possibly some missing
+links.
+
+\nwline
+In any such tree network $G$, one may safely delete a relay node
+$x \in V_{relay}$ that appears as a leaf node without changing the problem
+solution. 
+%
+This observation holds since relay nodes are relevant only if they
+connect some sensor node to the sink $s$.
+%
+We henceforth assume, without loss of generality, that the input tree
+network $G$ has no relay leaf.
+% ------------------------------
+
+\subsection{Overview of the Algorithm}
+
+The algorithm (Function $\fConn$ in Fig.~\ref{alg:Conn}) employs a
+dynamic programming approach.
+%
+It takes as input an instance $(G,\nReq)$ of the $\SCONN$ problem,
+and a tree $T=(V,E_T)$ on the set $V$ of nodes with no relay leaves.
+%
+The function computes the exact solution $Conn(G,\nReq)$ of the given
+instance.
+
+We consider $T$ as a tree rooted at the sink $s$. Each node $y$ in $T$
+has a parent node $x$ on the unique path from $y$ to the root $s$.
+%
+Each such node $y$ is a root of a subtree, denoted $T_y$, obtained by
+removing the link $(y, parent(y))$ from $T$.
+
+
+The key variables and data structures in the function are as follows.
+
+\begin{itemize}
+\item	$type(x)$:
+	For any node $x$, $type(x)= 0$ if $x$ is a relay node,
+	and $type(x)= 1$ if $x$ is a sensor node.
+
+\item	$n_x$ ($=n_{x,sense} + n_{x,relay}$):
+	$n_x$ is the total number of sensor nodes $n_{x,sense}$ and
+	relay nodes $n_{x,relay}$ in subtree $T_x$ (including node $x$)
+
+\item	$n_{x,min}$:
+	The minimum number of sensor nodes in $T_x$ that should be connected
+	to the sink in any operating state of the network.
+	%
+	So, $n_{x,min}= \max(0, \nReq - (n_{sense} - n_{x,sense}))$.
+	Here, $n_{sense} - n_{x,sense}$ is the number of available sensor nodes
+	not in $T_x$, and thus $\nReq - (n_{sense} - n_{x,sense})$,
+	if non-negative, is the minimum number of sensor nodes of $T_x$
+	required in any operating state of the network.
+	%
+	% That is, $n_{x,min}$ is the minimum contribution of tree $T_x$ to
+	% any operating state of the network.
+
+\item	$count_{x,min}$:
+	The minimum number of sensor nodes in the part of $T_x$ processed
+	thus far that should be connected to the sink in any operating state
+	of the network.
+
+\item	$\DCH(x)$:
+	Each iteration of the main loop in Step 2 identifies
+	a non-sink leaf node $y$ whose parent is denoted $x$. 
+	The function then processes, and then deletes node $y$.
+	Thus, in any iteration, each node $x$ may have some of its children
+	processed and deleted.
+	We denote such set of $x$'s deleted children by $\DCH(x)$.
+
+\item	Tables $R_x$ (and $R'_x$):
+	Each node $x \in V$ is associated with a table $R_x$.
+	The table stores {\em key-value} mappings.
+	%
+	Each key is a pair $(i,count)$ where $i$ is a possible location
+	index of $x$, and $count$ is a number of sensor nodes that are
+	descendants of $x$ (including $x$ itself) in the graph processed
+	thus far.
+	%
+	Roughly speaking, at any iteration of the main loop,
+	$R_x(i,count)$ is the probability of obtaining a state over
+	the subset of nodes in $T_x$ processed in previous iterations
+	where $x[i]$ reaches exactly $count$ sensor nodes in such subset of
+	$T_x$. 
+
+\end{itemize}
+
+% ------------------------------
+    % --------------- Function E2P ---------------
+    \begin{figure}[htbp]
+    % \begin{figure}[!ht]
+    \small
+\begin{center}
+\fbox{
+    \begin{minipage}[t]{3.3in}
+    \renewcommand{\baselinestretch}{1}
+    %
+    {\bf Function $\fConn (G, T, \nReq)$}
+\nwline
+	{\bf Input:}
+	\begin{minipage}[t]{2.75in}
+	An instance of the $\SCONN$ problem where $G$ has a tree
+	topology $T$ with no relay leaves
+	\end{minipage}
+%
+\nwline
+	{\bf Output:}
+	\begin{minipage}[t]{2.75in}
+	$Conn(G, \nReq)$
+	\end{minipage}
+	\\
+%
+%\nwline
+%	{\bf Notation:}
+%	\begin{minipage}[t]{2.75in}
+%	\end{minipage}
+% --------------------
+   \nwline
+% initialization
+   1.  \begin{minipage}[t]{3.00in}
+       {\bf foreach} (node $x$ and a valid location index $i$) \\
+       \{ \\
+         \iin{0.20} set $R_x(i, type(x) )= 1$ \\
+         \iin{0.20} $n_{x,min}= \min (0, \nReq - (n_{sense} - n_{x,sense}) )$ \\
+       \}
+       \end{minipage}
+       \\
+   \nwline       
+% main loop
+   2.  \begin{minipage}[t]{3.00in}
+       {\bf while} ($T$ has at least 2 nodes) \\
+       \{
+       \end{minipage}
+       \\
+   3.  \iin{0.20} \begin{minipage}[t]{2.80in}
+   		  Let $y$ be a non-sink leaf of $T$, and $x= parent(y)$
+		  \end{minipage}
+		  \\
+   4.  \iin{0.20} \begin{minipage}[t]{2.80in}
+   		  {\bf foreach} (key $(i,count) \in R_y$)
+		       $R_y (i,count) \starEqual p_y[i]$
+		  \end{minipage}
+		  \\
+   5.  \iin{0.20} \begin{minipage}[t]{2.80in}
+   		  set $R'_x= \phi$
+		  \end{minipage}
+		  \\
+   6.  \iin{0.20} \begin{minipage}[t]{2.80in}
+   		  {\bf foreach} (pair of keys
+		       		$\begin{array}[t]{l}
+				 (i_x, count_x) \in R_x \mbox { and }\\
+		   		 (i_y, count_y) \in R_y)
+				 \end{array}
+				$ \\ 
+		  \{
+		  \end{minipage}
+		  \\
+   7.  \iin{0.40} \begin{minipage}[t]{2.60in}
+   		  $count= \min (count_x + count_y, \nReq)$
+		  \end{minipage}
+		  \\
+   8.  \iin{0.40} \begin{minipage}[t]{2.60in}
+   		  $count_{x,min}= \begin{array}[t]{l}
+		  		  type(x) + n_{y,min} + \\
+		       	   	  \sum_{z \in \DCH(x)} n_{z,min}
+				  \end{array}$
+		  \end{minipage}
+		  \\
+   9.  \iin{0.40} \begin{minipage}[t]{2.60in}
+   		  {\bf if} ($count < count_{x,min}$) {\bf continue} 
+		  \end{minipage}
+		  \\
+   10.  \iin{0.35} \begin{minipage}[t]{2.60in}
+   		  $R'_x (i_x,count) \plusEqual$ 
+		  	$\begin{array}[t]{l}
+			 R_y(i_y,count_y) \times \\
+			 R_x(i_x,count_x) \times \\
+			 E_G(x[i_x], y[i_y])
+		  	 \end{array}$
+		  \end{minipage}
+		  \\
+       \iin{0.40} \} \\
+   11. \iin{0.20} \begin{minipage}[t]{2.60in}
+       		  set $R_x= R'_x$; remove $y$ from $T$
+		   \end{minipage}
+		   \\
+       \iin{0.15} \} \\
+   12. \begin{minipage}[t]{3.00in}
+       return $\sum_{x[i] \in \loc(x)} R_s(i,\nReq) * p_s[i]$
+       \end{minipage}
+       \\
+    \end{minipage}	
+}
+\end{center}
+    \normalsize
+    %
+    \caption{Pseudo-code for function $\fConn$}
+    \label{alg:Conn}
+\vspace*{-0.1in}
+    \end{figure}
+    % ------------------------------
+
+\subsection{Main Steps}
+
+Step 1 initializes table $R_x$ for each node $x$ as follows.
+%
+For each possible location index $i$ of $x$, set $R_x(i, count=1)= 1$
+if $x$ is a sensor node.
+Else ($x$ is a relay node), set $R_x(i, count=0)= 1$.
+%
+Step 1 also initializes $n_{x,min}$.
+
+
+Steps 2-11 form the main loop of the function.
+The loop iteratively finds a leaf node $y$ that is not the sink $s$, 
+processes node $y$, and then removes $y$ from the tree $T$.
+%
+Processing a node $y$ with parent $x$ is done as follows.
+
+Step 4 updates each entry $R_y (i,count)$ by multiplying the entry
+with $p_y[i]$.
+%
+As can be seen, this update operation is done in the iteration that ends by
+removing $y$.
+%
+Step 5 initializes the temporary table $R'_x$ to empty.
+
+
+Steps 6-10: the loop in step 6 performs a {\em cross product} of tables
+$R_x$ and $R_y$, storing the result in table $R'_x$.
+%
+In the cross product, each pair of possible keys $(i_x, count_x)$
+and $(i_y, count_y)$ are processed.
+%
+More specifically, suppose that $x[i_x]$ can reach $count_x$ sensor nodes
+in the part of $T_x$ processed thus far with probability $R_x(i_x,count_x)$.
+%
+Also, suppose that $y[i_y]$ can reach $count_y$ sensor nodes
+in $T_y$ with probability $R_y(i_y,count_y)$.
+%
+Thus, if $x[i_x]$ reaches $y[i_y]$ (i.e., $E_G(x[i_x],y[i_y])$= 1)
+then $x[i_x]$ can reach a total of $count= count_x + count_y$ nodes.
+
+
+If $count > \nReq$ then Step 7 truncates $count$ to $\nReq$.
+%
+On the other hand, if $count < count_{x,min}$ (i.e., $count$ is below the
+minimum number of nodes required to construct an operating state) then
+Step 9 skips Step 10 and starts a new iteration.
+%
+Step 10 updates the probabilities accumulated in $R'_x(i_x,count)$. 
+
+
+After exiting the main loop, the current tree $T$ contains only the
+sink node $s$. Step 12 computes the solution $Conn(G,\nReq)$ from
+the table $R_s$ associated with the sink $s$.
+% ------------------------------
+
+\subsection{Correctness}
+
+To prove correctness, we first introduce the following notation and
+definitions.
+%
+For a given node $x$, and iteration $r \in [1,n-1]$ of the main loop
+in Step 2, we have the following:
+%
+\begin{itemize}
+\item	$\DCH (x,r)$:
+	The set of $x$'s deleted children at the start of iteration $r$.
+
+\item	$V_{x,deleted,r}$ ($= \bigcup_{y \in \DCH(x,r)} V_y$):
+	The set of $x$'s deleted descendants at the start of iteration $r$.
+\end{itemize}
+%
+For brevity, we omit $r$ when the iteration number is not important, or
+understood by the context.
+
+
+In the following definitions, $x$ is any node in $T$,
+$i$ is a possible location index of $x$, and  $V_{x,delete}$ is
+the set of deleted descendants associated with $x$ at the start of some
+iteration.
+
+\begin{enumerate}
+\item[{\bf [D1]}]
+    Let $S$ be a state over nodes in $\{ x \} \bigcup V_{x,delete}$.
+    The {\em type} of $S$ is a pair $(i,count)$ where
+    %
+    \begin{itemize}
+    \item   $x$ is at location $x[i]$
+    \item   If $count = \nReq$ then the number of sensor nodes connected to
+    	    $x[i]$ in $S$ is $\geq \nReq$
+    \item   Else ($count < \nReq$), then the number of sensor nodes
+    	    connected to $x[i]$ is $< \nReq$
+    \end{itemize} 	   
+\end{enumerate}
+
+\begin{enumerate}
+\item[{\bf [D2]}]
+    We say that table $R_x$ is {\em complete} with respect to a given
+    set $V_{x,delete}$ if the following conditions hold:
+    %
+    \begin{enumerate}
+    \item  For each key $(i,count)$ in $R_x$, $R_x(i,count)$ is
+    	   the probability of obtaining states over
+	   $\{ x[i] \} \bigcup V_{x,delete}$ of type $(i,count)$.
+	   (Before multiplying by $p_x[i]$, the probability is conditioned
+	   on $x$ being at location $x[i]$).
+    \item  Each key $(i,count)$ not in $R_x$ does not contribute to
+    	   computing the solution $Conn(G,\nReq)$.
+    \end{enumerate}
+\end{enumerate}
+
+\nwline
+We now show the following theorem.
+
+\begin{thm} \label{thm:correctness}
+    At the start of each iteration of the main loop in Step 2,
+    if $x$ is a node in the current tree $T$ then table $R_x$ is complete
+    with respect to the associated set $V_{x,delete}$ of deleted nodes.
+\end{thm}
+
+\nwline
+{\bf Proof.}
+\nwline
+{\bf Loop initialization:}
+At the start of the 1st iteration, $T$ contains all nodes $V$, and
+each node $x$ has $V_{x,delete}= \emptyset$.
+%
+Node $x$ in location $x[i_x]$ is associated with one state of type
+$(i_x,count_x= 0)$ if $x$ is a relay node, or type
+$(i_x,count_x= 1)$ if $x$ is a sensor node.
+%
+For each such state type, Step 1 correctly sets $R_x(i,count)$.
+
+\nwline
+{\bf Loop maintenance:}
+Assume the theorem holds for all possible iterations $r$, where $r \leq n-2$.
+We show that it holds in iteration $r+1$.
+%
+Let $y$ be the leaf node deleted in iteration $r$, and $x= parent(y)$.
+$R_x$ is the only table that may have changed between iterations
+$r$ and $r+1$.
+%
+Thus, it suffices to show that $R_x$ is complete with respect to
+$\{ x \} \bigcup V_{x,delete,r+1}$ at the start of iteration $r+1$.
+%
+To this end, we note the following in iteration $r$:
+%
+\begin{itemize}
+\item  Step 4: this step adjusts the probability of each state type
+       $(i,count)$ in $R_y$ by taking into account $p_y[i]$.
+\item  Step 6: this loop exhaustively generates all state types over the
+       set $V_y \bigcup V_{x,delete,r}$ where $V_y$ is a̠l̠l̠ nodes of
+       the subtree rooted at node $y$.
+\item  Step 9: this step discards all state types that can not be extended
+       (by adding sensor nodes from the unprocessed part of the tree)
+       to satisfy the $\nReq$ requirement.
+\item  Step 10: this step updates the probability of $R'_x(i_x,count)$ by
+       adding the right hand side when states of type $(i_x, count)$
+       can be extended to operating states.
+\end{itemize}
+\IEEEQED
+
+Following an argument similar to the loop maintenance argument, one can
+show that at Step 12, table $R_s$ associated with the sink node is
+complete with respect to all nodes $V$ in the network.
+%
+Thus, the function returns the required solution $Conn(G, \nReq)$.
+
+% ------------------------------
+
+\subsection{Running Time}
+
+Let $n$ be the number of nodes in $G$, and $\ell_{max}$ be the maximum
+number of locations in the locality set of any node.
+
+% ----------
+\begin{thm}
+    Function $\fConn$ solves the $\SCONN$ problem in
+    $O(n \cdot n_{req}^2  \cdot \ell_{max}^2)$ time
+\end{thm}
+
+\nwline
+{\bf Proof.}
+We note the following.
+\begin{itemize}
+\item   Step 1: storing the tree $T$, and computing $n_x$ and $n_{x,min}$
+	for each node $x$, require $O(n)$ time.
+
+\item	Step 2: the main loop performs $n-1$ iterations.
+	Each of Steps 3, 5, and 11 can be done in constant time.
+
+\item	Step 4: this loop requires $O(\nReq \cdot \ell_{max})$ time.
+
+\item	Step 6: this loop requires $O(n_{req}^2 \cdot \ell_{max}^2)$ iterations.
+	Steps 7, 8, 9, and 10 can be done in constant time.
+\end{itemize}
+Thus, the overall running time is determined by the main loop that
+requires $O(n \cdot n_{req}^2  \cdot \ell_{max}^2)$ time.
+\IEEEQED
+% ----------
+%
+\nwline
+\begin{thm}
+    Function $\fConn$ solves the $\ACONN$ problem in
+    $O(n \cdot \ell_{max}^2)$ time.
+
+    % Overall: $O(n \cdot \ell_{max} + n \cdot \ell_{max}^2)$
+\end{thm}
+
+\nwline
+{\bf Proof.}
+It suffices to show that the main loop requires the above time.
+%
+In the $\ACONN$ problem, $\nReq= |V_{sense}|$, and all sensor nodes
+in any subtree $T_y$ should be connected to the root $y$ in any
+operating state.
+%
+So, in any iteration of the main loop, each table $R_y$ contains keys
+$(i,count)$ for only one value of $count$ (the maximum value obtainable
+from descendants of $y$ processed and removed thus far).
+%
+That is, the maximum length of any table is $\ell_{max}$ independent
+of $\nReq$.
+%
+This gives the running time shown in the theorem. 
+\IEEEQED
+

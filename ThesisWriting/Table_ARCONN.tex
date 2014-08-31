@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{setspace} 
+\singlespacing
+\begin{document}
+
+
+\begin{table}[!htb]
+
+     \begin{minipage}{0.35\linewidth}
+      %\caption{$T_1(v_1,v_2,v_3)$}
+     \resizebox{\linewidth}{!}{\begin{tabular}{l}
+     \hline 
+  \multicolumn{1}{|l|}{$\{v_1,v_2\}\{v_3\}$} \\ \hline         
+\end{tabular}}
+    \end{minipage}%
+     \begin{minipage}{.06\linewidth}
+     
+       \resizebox{\linewidth}{!}{  \begin{tabular}{l}
+     $ \times$\\
+        \end{tabular}}
+    %    \label{ch3:tabmrg1}
+    \end{minipage}%
+    \begin{minipage}{0.35\linewidth}
+      %\caption{$T_1(v_1,v_2,v_3)$}
+      \centering
+     \resizebox{\linewidth}{!}{\begin{tabular}{l}
+     \hline 
+  \multicolumn{1}{|l|}{$\{v_1\}\{v_3,v_4\}$}  \\ \hline         
+\end{tabular}}
+    \end{minipage}%
+     \begin{minipage}{.1\linewidth}
+       \resizebox{\linewidth}{!}{  \begin{tabular}{l}
+     $ \Rightarrow$\\
+        \end{tabular}}
+    %    \label{ch3:tabmrg1}
+    \end{minipage}%
+    \begin{minipage}{.4\linewidth}
+      \resizebox{\linewidth}{!}{\begin{tabular}{l}
+      \hline
+  \multicolumn{1}{|l|}{$\{v_1,v_2\}\{v_3,v_4\}$}\\ \hline         
+\end{tabular}}
+    \end{minipage}
+   
+\end{table}
+\end{document}

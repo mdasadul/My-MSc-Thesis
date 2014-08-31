@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Problem Formulation and Thesis Contributions}{3}{0}{1}
+\beamer@sectionintoc {2}{Challenges}{4}{0}{2}
+\beamer@sectionintoc {3}{Node Deployment Strategy}{5}{0}{3}
+\beamer@sectionintoc {4}{Problem Definition}{8}{0}{4}
+\beamer@sectionintoc {5}{Overview on $k$-Trees and Partial $k$-Trees}{11}{0}{5}
+\beamer@sectionintoc {6}{Probabilistic Connectivity of Tree Network}{12}{0}{6}
+\beamer@sectionintoc {7}{Future Research Directions}{24}{0}{7}

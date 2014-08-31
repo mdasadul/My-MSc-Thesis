@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: main.aux
+The style file: plain.bst
+Database file #1: Bibliography.bib
+I was expecting a `,' or a `}'---line 65 of file Bibliography.bib
+ :   
+ :   address={Philadelphia}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 103 of file Bibliography.bib
+ : 
+ : %  title={Dynamic programming on graphs with bounded treewidth},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+"{" immediately follows a field name---line 1177 of file Bibliography.bib
+ :   bookti@inproceedings
+ :                       {Erol:2007:LDB:1287812.1287833,
+I'm skipping whatever remains of this entry
+Illegal end of database file---line 1346 of file Bibliography.bib
+ : 
+ : 
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty booktitle in chen2014
+Warning--there's a number but no series in chen2014
+Warning--empty publisher in chen2014
+Warning--empty publisher in Tree2014
+Warning--empty year in Tree2014
+You've used 60 entries,
+            2118 wiz_defined-function locations,
+            850 strings with 14614 characters,
+and the built_in function-call counts, 23489 in all, are:
+= -- 2383
+> -- 1092
+< -- 25
++ -- 444
+- -- 368
+* -- 1722
+:= -- 3756
+add.period$ -- 200
+call.type$ -- 60
+change.case$ -- 356
+chr.to.int$ -- 0
+cite$ -- 65
+duplicate$ -- 883
+empty$ -- 1822
+format.name$ -- 368
+if$ -- 5000
+int.to.chr$ -- 0
+int.to.str$ -- 60
+missing$ -- 67
+newline$ -- 303
+num.names$ -- 120
+pop$ -- 382
+preamble$ -- 1
+purify$ -- 303
+quote$ -- 0
+skip$ -- 605
+stack$ -- 0
+substring$ -- 1632
+swap$ -- 232
+text.length$ -- 25
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 226
+warning$ -- 5
+while$ -- 238
+width$ -- 62
+write$ -- 684
+(There were 4 error messages)

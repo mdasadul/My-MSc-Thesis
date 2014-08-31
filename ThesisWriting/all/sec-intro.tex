@@ -1,0 +1,172 @@
+
+\section{Introduction}
+
+% --------------------
+%\begin{itemize}
+%\item  Books: \cite{xiao2010underwater, otnes2012underwater}
+%
+%\item  Surveys: \cite{akyildiz2005underwater, partan2007survey,
+%       climent2014underwater, heidemann2012underwater}
+%
+%\item  Architecture: \cite{jaffe2006sensor}
+%
+%\item  Real world: \cite{le2013realWorld, roy2006wideArea}
+%\item  Coverage: \cite{senel2013auto, pompili:2006deploymen}
+%
+%\item  Reliability: \cite{Co87}
+%\item  Delays: \cite{pu2013comparing}
+%
+%\item  Very related: \cite{bower1989evidence, bower91simple,
+%       caruso2008meandering, luo2009double, elmallah01supporting}
+%\end{itemize}
+% --------------------
+
+Research on Underwater Sensor Networks (UWSNs) has intensified in recent
+years.
+Interest in such research has been fueled by many important underwater
+sensing applications and services that can be supported by such networks
+(see, e.g., \cite{akyildiz2005underwater,heidemann2012underwater}).
+%
+The domains of such applications are diverse and can be roughly classified as
+scientific applications (e.g., collecting data on geological processes,
+analyzing water characteristics, study of marine life),
+industrial applications (e.g., monitoring underwater equipment and pipelines
+used in oil industry),
+humanitarian applications (e.g., search and survey missions, prediction of
+natural disturbances) and/or
+military and home land security applications (e.g., securing port facilities).
+
+To serve the above diverse types of applications, various types
+of UWSN deployments are used.
+%
+In \cite{heidemann2012underwater}, for example, UWSN deployments are
+classified as being either static, semi-mobile, or mobile.
+%
+Static networks have nodes attached to underwater ground,
+anchored buoys, or docks.
+%
+Semi-mobile networks may have collection of nodes attached to a
+free floating buoy. Nodes in semi-mobile networks are subject to small scale
+movements.
+%
+Mobile networks may be composed of drifters with no self mobility
+capability, or nodes with mobility capability. Nodes in such networks
+are subject to large scale movements.
+%
+UWSN deployments may occur over many short periods of times (e.g.,
+several days at a time), so as to conduct several missions over
+a large area of interest.
+%
+
+Due to the importance of such applications, and the challenges encountered
+in their design, extensive work spanning all five layers of the Internet
+protocol stack appear in the literature.
+%
+See, e.g., the chapters in \cite{xiao2010underwater, otnes2012underwater},
+and the survey articles in \cite{partan2007survey, climent2014underwater}.
+%
+Examples of real-world UWSN work include
+\cite{rice2000evolution,jaffe2006sensor,roy2006wideArea,rice2007seaweb,
+pu2013comparing}.
+
+% ------------------------------
+In this paper, we consider semi-mobile and mobile networks.
+%
+Maintaining connectivity in such networks is a crucial aspect for
+any task requiring node collaboration.
+%
+Our interest in on developing methodologies that allow a designer
+to analyze the likelihood that a network (or part of it) is connected
+at a given time interval.
+
+For literature review, we note that several experimental and analytical
+results in oceanography literature have shaped our current understanding
+of mobility for underwater sensor networks.
+%
+Of the vast literature existing in the field, we recall the following
+early landmark results.
+%
+In \cite{bower1989evidence}, the authors report on several observations
+collected in the Gulf Stream using thirty-seven RAFOS drifters launched
+off Cape Hatteras. Mobility of the free floating drifters are tracked
+for 30 or 45 days.
+%
+In \cite{bower91simple}, the author describes a 2-dimensional kinematic
+model of a meandering jet. 
+%
+The model captures the striking patterns of cross-stream and vertical
+motion associated with meanders observed in \cite{bower1989evidence}.
+
+
+Investigations and results obtained in the above directions have
+been valuable for networking researchers approaching the challenge
+of modelling the mobility of underwater sensor networks.
+%
+In \cite{caruso2008meandering}, the authors adopt a kinematic model
+for capturing the effect of meandering sub-surface currents and v̰o̰r̰t̰ḭc̰ḛs̰
+of free floating sensor nodes.
+%
+The model, called the meandering current mobility model, is useful
+for large coastal environments that span several kilometers.
+%
+It captures the strong correlations in mobility of nearby sensor nodes.
+%
+Using simulation, the authors investigate several network connectivity,
+coverage, and localization aspects.
+
+
+In \cite{luo2009double}, the authors consider sensor nodes with movement
+capability.
+%
+Each node incurs both uncontrollable and controllable mobility
+(abbreviated as U-mobility and C-mobility).
+%
+Using a grid layout that divides a geographic area into cells, the authors
+adopt a probabilistic U-mobility model.
+%
+The model takes into consideration two types of effects:
+{\em local variety} effects (caused by reefs, turbulence), and
+{main circulation}  effects (caused by wind, salinity).
+%
+Using such model, the authors present an energy efficient approach for
+satisfying network coverage requirements.
+
+
+In this paper, we adopt a simple {\em probabilistic locality} model
+where the geographic area under consideration is partitioned into
+disjoint regions (rectangles) using a grid layout.
+%
+In our model, the use of a high grid resolution (i.e., a layout with small
+regions) can potentially give accurate results at the expense of decreased
+solution efficiency.
+%
+We assume that one can utilize a physical model of underwater currents to
+compute the probability that a sensor node is located at a given region
+during some time interval of interest.
+%
+For example, one may utilize the kinematic model adopted in
+\cite{caruso2008meandering} to compute such probabilities from a
+sufficiently large number of node trajectories generated by the model.
+%
+Using such probability distribution, one obtains a {\em probabilistic} graph
+model of the network.
+
+Our work here formalizes two problems, denoted $\ACONN$ and $\SCONN$,
+that call for determining the likelihood that a probabilistic graph
+is entirely or partially connected.
+%
+Our main contribution is an efficient dynamic programming algorithm to
+solve both problems on tree-like networks.
+%
+The algorithm can be used to derive lower bounds on the solution of
+any arbitrary probabilistic network.
+%
+Our devised algorithm extends a result in \cite{elmallah01supporting}
+to compute the probability that a given sequence of nodes 
+in a probabilistic network forms a simple connected path.
+%
+To the best of our knowledge, both the problems formulation and devised
+algorithm are novel aspects of the paper.  
+
+In the next two sections we outline the system model and problem formulations.
+Section 4 then gives a detailed description of the algorithm.

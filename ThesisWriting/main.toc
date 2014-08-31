@@ -1,0 +1,61 @@
+\contentsline {chapter}{Acknowledgements}{iii}{dummy.1}
+\vspace {1em}
+\contentsline {chapter}{Contents}{iv}{dummy.2}
+\contentsline {chapter}{List of Figures}{vi}{dummy.4}
+\contentsline {chapter}{List of Tables}{vii}{dummy.6}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}
+\contentsline {section}{\numberline {1.1}Introduction}{2}{section.9}
+\contentsline {section}{\numberline {1.2}Node Mobility}{6}{section.11}
+\contentsline {section}{\numberline {1.3}Network Model}{10}{section.21}
+\contentsline {subsection}{\numberline {1.3.1}Node Locality Sets}{10}{subsection.22}
+\contentsline {subsection}{\numberline {1.3.2}Node Reachability}{11}{subsection.23}
+\contentsline {section}{\numberline {1.4}Problem Formulation}{12}{section.24}
+\contentsline {section}{\numberline {1.5}Thesis Organization and Contribution}{15}{section.34}
+\contentsline {section}{\numberline {1.6}Concluding Remarks}{16}{section.39}
+\contentsline {chapter}{\numberline {2}Algorithmic Aspects of k-Trees}{17}{chapter.40}
+\contentsline {section}{\numberline {2.1}Graph Notation}{17}{section.41}
+\contentsline {section}{\numberline {2.2}$k$-Trees and Partial $k$-Trees}{18}{section.42}
+\contentsline {section}{\numberline {2.3}Dynamic Programming on Partial $k$-Trees}{21}{section.65}
+\contentsline {section}{\numberline {2.4}Set Partitions}{24}{section.87}
+\contentsline {section}{\numberline {2.5}Finding Good Partial $k$-Tree Subgraphs}{25}{section.90}
+\contentsline {section}{\numberline {2.6}Concluding Remarks}{27}{section.95}
+\contentsline {chapter}{\numberline {3}Probabilistic Connectivity of Tree Networks}{28}{chapter.96}
+\contentsline {section}{\numberline {3.1}System Model}{28}{section.97}
+\contentsline {section}{\numberline {3.2}Overview of the Algorithm}{29}{section.98}
+\contentsline {section}{\numberline {3.3}Main Steps}{32}{section.104}
+\contentsline {section}{\numberline {3.4}Correctness}{33}{section.105}
+\contentsline {section}{\numberline {3.5}Running Time}{36}{section.109}
+\contentsline {section}{\numberline {3.6}Simulation Results}{37}{section.112}
+\contentsline {section}{\numberline {3.7}Concluding Remarks}{37}{section.113}
+\contentsline {chapter}{\numberline {4}The $A$-$CONN$ Problem on Partial $k$-trees}{38}{chapter.114}
+\contentsline {section}{\numberline {4.1}Overview of the Algorithm}{38}{section.115}
+\contentsline {section}{\numberline {4.2}Algorithm Organization}{43}{section.126}
+\contentsline {subsection}{\numberline {4.2.1}Function Main}{44}{subsection.127}
+\contentsline {subsection}{\numberline {4.2.2}Function Table Merge}{46}{subsection.145}
+\contentsline {subsection}{\numberline {4.2.3}Function Partition Merge }{47}{subsection.160}
+\contentsline {section}{\numberline {4.3}Example Tables}{48}{section.177}
+\contentsline {section}{\numberline {4.4}Correctness}{50}{section.182}
+\contentsline {section}{\numberline {4.5}Running time}{51}{section.184}
+\contentsline {section}{\numberline {4.6}Software Verification}{52}{section.188}
+\contentsline {section}{\numberline {4.7}Simulation Results}{53}{section.194}
+\contentsline {section}{\numberline {4.8}Concluding Remarks}{57}{section.211}
+\contentsline {chapter}{\numberline {5}Networks with Relays}{58}{chapter.212}
+\contentsline {section}{\numberline {5.1}Overview of the Extensions}{58}{section.213}
+\contentsline {section}{\numberline {5.2}The $ {\mathrm {AR\unhbox \voidb@x \hbox {-}CONN}} $ Algorithm}{59}{section.214}
+\contentsline {subsection}{\numberline {5.2.1}$ {\mathrm {AR\unhbox \voidb@x \hbox {-}CONN}} $ State Types}{59}{subsection.215}
+\contentsline {subsection}{\numberline {5.2.2}Initializing Tables}{60}{subsection.219}
+\contentsline {subsection}{\numberline {5.2.3}Merging $ {\mathrm {AR\unhbox \voidb@x \hbox {-}CONN}} $ State Types}{60}{subsection.222}
+\contentsline {subsection}{\numberline {5.2.4}Removing Bad State Types}{61}{subsection.223}
+\contentsline {subsection}{\numberline {5.2.5}Obtaining Final Result}{62}{subsection.224}
+\contentsline {subsection}{\numberline {5.2.6}Running Time}{63}{subsection.225}
+\contentsline {section}{\numberline {5.3}$ {\mathrm {AR\unhbox \voidb@x \hbox {-}CONN}} $ Simulation Results}{63}{section.229}
+\contentsline {section}{\numberline {5.4}The $ {\mathrm {SR\unhbox \voidb@x \hbox {-}CONN}} $ Algorithm}{66}{section.238}
+\contentsline {subsection}{\numberline {5.4.1}$ {\mathrm {SR\unhbox \voidb@x \hbox {-}CONN}} $ State Types}{66}{subsection.239}
+\contentsline {subsection}{\numberline {5.4.2}Initializing Tables}{67}{subsection.243}
+\contentsline {subsection}{\numberline {5.4.3}Merging $ {\mathrm {SR\unhbox \voidb@x \hbox {-}CONN}} $ State Types}{67}{subsection.244}
+\contentsline {subsection}{\numberline {5.4.4}Bad State Types}{68}{subsection.245}
+\contentsline {subsection}{\numberline {5.4.5}Obtaining Final Result}{69}{subsection.246}
+\contentsline {subsection}{\numberline {5.4.6}Running Time}{69}{subsection.247}
+\contentsline {section}{\numberline {5.5}$ {\mathrm {SR\unhbox \voidb@x \hbox {-}CONN}} $ Simulation Results}{69}{section.251}
+\contentsline {section}{\numberline {5.6}Concluding Remarks}{70}{section.253}
+\contentsline {chapter}{\numberline {6}Concluding Remarks}{72}{chapter.254}

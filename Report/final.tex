@@ -1,0 +1,191 @@
+\documentclass[12pt]{article}
+\usepackage{algpseudocode}
+%\usepackage[boxed]{algorithm}
+\usepackage{algorithm2e}
+
+%\usepackage{algorithmicx}
+\usepackage{graphicx,epsfig,fancybox,amsthm}
+\usepackage{verbatim}
+\usepackage{caption}
+\usepackage{subcaption}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem*{defi}{Definition}
+\newtheorem{exmp}{Example}[section]
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{lemma}[theorem]{Lemma}
+
+%\newenvironment{definition}[1][Definition]{\begin{trivlist}
+
+
+\setlength{\textwidth}{6.5 in}
+\setlength{\textheight}{9 in}
+\setlength{\topmargin}{-1.0 in}
+%\renewcommand{\baselinestretch}{1.1}
+\setlength{\oddsidemargin}{0.0 in}
+\setlength{\evensidemargin}{0.0 in}
+\begin{document}
+%------------------------------------------------------------
+\newcommand {\nwline}   {\hfill\break}
+\newcommand {\closeup}  {\vspace*{-0.2in}}
+\newcommand {\hLine}[1] {\begin{center}\rule{#1}{0.25mm}\end{center}}
+
+\newcommand {\ol}[1]    {\overline{#1}}
+\newcommand{\Prob}[1]   { {\bf \mathrm{Prob}} \left[ #1 \right] }
+\newcommand{\Var}[1]    { {\bf \mathrm{Var}} \left[ #1 \right] }
+%------------------------------------------------------------
+
+
+\fbox{
+    \begin{minipage}[t]{6.0in}
+    \begin{description}
+    \item[Title:]	Technical Report
+
+    \item[Project Title:] Connectivity and coverage of underwater sensor networks 
+    \item[Name:]	Md Asadul Islam
+
+    \item[Date:]	\today
+
+    \end{description}
+    \end{minipage}
+}
+%------------------------------------------------------------
+
+\begin{abstract}
+
+\begin{comment}
+Note that a paper's abstract is intended to be a concise highlevel
+description of the contents of the paper. It implicitly defines a road
+map of the important aspects of the paper (without referring to exact
+section numbers) and it should do a good job in mentioning all such
+important aspects in a coherent way.
+\end{comment}
+\end{abstract}
+
+% ------------------------------% Here is the main document
+\section{Introduction}
+\label{sec:intro}
+Interest of monitoring underwater environment is growing day by day. Sensor network is a promising tool for underwater environment monitoring because of its remote monitoring and control technology. Underwater Sensor networking is using for military surveillance\cite{kong2005building}, disaster prevention, assisted navigation, offshore exploration, tsunami monitoring and oceanographic data collection. 
+Coverage and connectivity are two important aspect of underwater sensor network. One can determine the quality of surveillance of a underwater wireless sensor network from network coverage. Many to one data flow from a set of sources to a common sink over a tree based routing topology, is a fundamental communication architecture of a underwater sensor networks.
+
+
+ 
+ \begin{itemize}
+ \item In \cite{akkaya2009self} authors propose a distributed node deployment scheme which can increase the initial network coverage in an iterative basis. They assuming that the nodes are initially deployed at the bottom of the water and can only move in vertical direction in 3-D space. The idea is to relocate the nodes at different depths based on a local agreement in order to reduce the sensing overlaps among the neighbouring nodes. Redundancy is observe by one  of the node called Leader. It utilizes vertex colouring problem formulation in-order to determine coverage overlap. The nodes continue to adjust their depths until there is no room for improving their coverage. They consider both tether and and untethered architecture for node deployment.
+ \item There is a recent mobility model for underwater sensor networks called Meandering Current Mobility Model (MCM) \cite{caruso2008meandering}. In this model, nodes are moving by the effect of meandering sub-surface currents and vortices. This model is for large ocean environments that span several kilometres. Vertical movements in ocean are negligible with respect to horizontal ones. Thus, in their model they neglect vertical displacement which makes mobility in 2D. This model is more realistic than other mobility models for UWSNs since nodes are drifted according to the movement of the ocean.  Notice that this model is deterministic. When the initial position of a sensor node is determined, its
+subsequent route is also determined.
+\item The work of \cite{luo2009double}, \cite{luo2012double} extends \cite{caruso2008meandering} and proposes a ring like motion to capture the basic of sea flow. According to this model there are two types of mobility, uncontrollable mobility which breaks the coverage of sensor network and controllable mobility which restore the coverage of sensor network. In the ring-like model \cite{luo2009double}, they consider local variety and main circulation in-order to capture some characteristics of water bodies. Also they use probability model in-order to determine the next position of a node.
+
+\item In \cite{wald1983steiner}, \cite{wald1983steiner1} author proposed a polynomial algorithm to solve Steiner tree problem. The Steiner tree problem  in an undirected graph is the problem of finding 
+a tree spanning a pre-specified set of vertices at minimum cost where the cost of a tree is 
+equal to the sum of the cost of its edges.
+ \end{itemize}
+ 
+ We are given locality of nodes we want to find out the probability that the network is connected. 
+
+\section{System Model and Problem Formulation}
+\label{sec:systemmodel}
+\subsection{Connectivity and Coverage Model}
+\label{subsec:conAndCoverage}
+Underwater Wireless Sensor Network (UWSN) is a graph of \((V\cup\{s\})\) nodes, where \(V=(v_1,v_2,v_3,..,v_n)\) is a set of vertices and \(s\) is only one sink node which has the capability of data gathering. The transmission range for each node \(u\in (V\cup\{s\})\)  is same which is \(R_{tr}(u)\). One node can transmit data to other node if they are within transmission range of each other.
+
+\subsection{Location Probability Model}
+\label{subsec:LPM}
+We are considering theensor network deployment space is a \(2D\) grids. We will place nodes at the center of each grids. Also we are assuming that every node \(u\in (V\cup\{s\})\) can be located into a finite number of positions namely \(n\) positions and \(n\) positions of node \(u\) in \(2D\) grid space can be \((x_1,y_1),(x_2,y_2),(x_3,y_3),...,(x_n,y_n)\)  with probability \(P(x_1,y_1),P(x_2,y_2),P(x_3,y_3),...,P(x_n,y_n)\). Also we are considering the sum of all probability values will be 1 but in some cases we will consider a set of locations with high probability then the sum of probabilities will be less than 1. So mathematically  \(P(x_1,y_1)+P(x_2,y_2)+P(x_3,y_3)+...+P(x_n,y_n)\leq 1\). Probability of a node which is located into a specific grid, is independent of the probability of that node located into other grids in the finite grid space. Also location probability of one node is independent of the location probability of other nodes. \(n\) probable locations of a node can be contiguous also it can be non-contiguous.
+\begin{figure}
+\includegraphics[width=3 in, height=2.5 in]{Exfig.pdf}
+ \caption{A partial \(2\)-tree with \(4\) nodes.
+}
+\end{figure}
+
+\begin{exmp}
+Fig. 1 illustrates a network of $4$ nodes. Probable number location for node $A, B,C$ can be $4,2$ and $3$  respectively.$S$ can be located more than $4$ locations but we are only considering $4$ location with high probability. Transmission range \(R_{tr}\) for every node is same and which is $8.5$ unit. By using this transmission range node $A$ from any of its probable locations communicate with node all probable locations of $B$ and $C$ but not with node $S$. Similarly node $B$ from probable locations can communicate with all probable locations of node $S$ and node $A$ but for node $C$ only the location with probability value $0.3$. Node $C$ can communicate with node $S$ when it locates in the location with probability values $0.35$ and $0.2$
+\end{exmp}
+Now we define formally the problem.
+
+\begin{defi}[The PKTWSN Problem]
+Let $G=(V\cup{s},E)$ is a UWSN where $s$ is a sink node and for each node $x\in (V\cup{s})$ has a equal transmission radius $R_{tr}(x)$. Each node $x$ can be located into a finite number of locations with a probability. If one or more probable location of node $x\in (V\cup{s})$ is within the transmission radius $R_{tr}$ of one or more probable location of node $y\in (V\cup{s})$ then there is a link between $x$ and $y$ i.e. $(x,y)\in E$. Probability for each edge $(x,y)\in E$ is calculated by $\sum($probability of $x$ for all probable location within $R_{tr}(y))* \sum($probability of $y$ for all probable location within $R_{tr}(x))$.
+Find the probability every node is connected with sink directly or via some other node(s).
+\end{defi}
+
+ \begin{comment}
+If probable location of node \(u\in (V\cup\{s\})\) are \((x_1,y_1),(x_2,y_2),(x_3,y_3),...(x_n,y_n)\) and probable location of node \(v\in (V\cup\{s\})\) are  \((x'_1,y'_1),(x'_2,y'_2),(x'_3,y'_3),...,(x'_n,y'_n)\) and they are connected by an edge \(E\) then the associated probability of the edge can be calculated as follows \(\sum P(x_i,y_i)*P(x'_i,y'_i)\) where the euclidean distance between \((x_i,y_i)\) and \((x'_i,y'_i)\) is less than or equal \(R_s\).
+
+\end{comment}
+\section{K trees}
+\label{sec:ktree}
+A clique is a set of vertices that induce a complete subgraph of a graph \(G\). A clique with \(k\) vertices is considered to be a \(k\)-tree. Treewidth is a parameter by using this one can measure how a graph is ``tree like'' or ``close to being a tree''. Treewidth of \(k\) tree is \(k\). 
+\begin{defi}
+The class of  \(k\)-tree can be recursively defined as follows: 
+\begin{itemize}
+ \item The complete graph on k vertices is a k-tree.
+ \item Lets \(T_n\) is a \(k\)-tree  with $n$ vertices where $n\geq k$. Then we can construct a $k$-tree $T_{n+1}$ of $n+1$ vertices by adding a vertex adjacent to exactly $k$ vertices, namely all vertices of a $k$ clique of $T_n$. 
+\end{itemize}
+
+\end{defi}
+  A partial \(k\)-tree is any subgraph of a \(k\)-tree and they are equivalent to graphs of treewidth at most \(k\). A partial \(k\)-tree is a rich class of graph. Forest is an example of partial 1-tree. Series-parallel graphs and chordal graphs are subfamily of partial \(2\)-trees. Also Halin graphs, Nested SAT and IO-graphs are subclasses of partial \(3\)-trees. Several graph problem that are NP-complete on general graphs have polynomial time algorithms for graphs with treewidth bounded by a constant. Any polynomial time algorithm for graphs of bounded treewidth is a polynomial time algorithm for partial \(k\)-tees. Partial \(k\)-trees are useful as they might be seen as a tool to gain more insight in graphs of bounded treewidth. 
+  \begin{exmp}
+  Fig. 1 depict a partial $2$-tree. The complete graph of $2$ vertices namely $A$ and $B$ is a $2$-tree. Then we added vertex $C$ which is adjacent to both $A$ and $B$ is a $2$-tree of 3 vertices. Finally a vertices $S$ is added to the clique $BC$ to form the $2$-tree with $4$ vertices.
+  \end{exmp}
+\subsection{Perfect Elimination Sequence}
+A perfect elimination sequence (PES) in a graph is an ordering of the vertices of the graph such that, for each vertex $v$, $v$ and the neighbors of $v$ that occur after $v$ in the order form a clique. In-order to find PES we need to define chordal graph, simplicial vertex.
+\begin{defi}[Simplicial Vertex]
+A simplicial vertex of a graph $G$ is a vertex $v$ such that the neighbours of $v$ form a clique in $G$. Clearly, if $G$ has a PES, then the last vertex in it is simplicial in G.
+\end{defi}
+\begin{defi}[Chordal Graph] 
+A graph is chordal if its cycles of four or more vertices has a chord, which is an edge thet is not part of the cycle but connect two vertices of the cycle. 
+\end{defi}
+A graph is chordal if and only if it has a PES. There is a corollary that every $k$-tree is a chordal graph \cite{heggernes2006treewidth}. So there is a perfect elimination ordering for every $k$-tree. 
+Now in-order to find PES we need to repeat the following step until no simplicial vertices are left: Find a simplicial vertex and remove it from the graph.
+If the graph is chordal, there will be a simplicial vertex at each step, by the
+above lemma. Therefore, if the remaining graph is not empty at the end of
+this process, then we can conclude that the input graph is not chordal. If no
+vertices remain at the end of the process, then the order in which the vertices
+are removed is called a perfect elimination order.
+\begin{exmp}
+In fig. 1 we show that there are two siplicial vertex, $A$ and $S$. But $S$ is our sink node so we are not elimination $S$. So After elimination of $A$, we will be able to eliminate either $B$ or $C$. So the PES will be either $A,B$ or $A,C$.
+\end{exmp}
+\section{Main Algorithm}
+\label{subsec:mainAlg}
+\begin{algorith}
+
+\end{algorithm}
+\fbox{
+ \begin{minipage}[t]{6.0in}
+\textbf{Function} CPASN($G$,$PES$,$R_{tr}$)\\
+\textbf{Input:} a ASN $G$ that is a partial $k$-tree where each node can be located into finite number of position  \((x_1,y_1),(x_2,y_2),(x_3,y_3),...(x_n,y_n)\) with probability \(p(x_1,y_1),p(x_2,y_2),p(x_3,y_3),...,p(x_n,y_n)\). $PES$ is a perfect elimination sequence of $G$ and $R_{tr}$ is the transmission range.\\
+\textbf{Output:} Prob, a solution to the input CPASN instance.\\
+\begin{itemize}
+\item[1] \textbf{Initialize } every clique of $G$ with the nodes positional probability 
+
+\item[2]\textbf{foreach}(node $v\in PES$ according to order or $PES$)\\
+\item[3]\{
+\item[4]  find all neighbour $[n_1,n_2,..n_n]$ of $v$
+\item[5] \textbf{foreach} pair of neighbour($n_i,n_j$)\\
+\item [6] \{
+\item[7] update the edge table between $n_i$ and $n_j$ from the edge table between $n_i$ and $v$ and between $n_j$ and $v$ 
+\item[8] \}
+\item[10] delete node $v$ and associated edges
+\item [11]\}
+\end{itemize}
+
+\end{minipage}
+}
+
+\textbf{Initialize:} for every edge $(i,j)\in E$ if the probable locations for node $i$ in a $2D$ grid space are $(x_1,y_1),(x_2,y_2),..,(x_n,y_n)$ with probability $p(x_1,y_1),p(x_2,y_2),..,p(x_n,y_n)$ and if the probable locations for node $j$ are $(x'_1,y'_1),(x'_2,y'_2),..,(x'_n,y'_n)$ with probability $p(x'_1,y'_1),p(x'_2,y'_2),..,p(x'_n,y'_n)$  We will find the euclidean distance between any two position i.e. $\sqrt{(x_i-x'_j)^2+(y_i-y'_j)^2}\leq R_{tr}$. Then we will put two entry edge table $\{(x_i,y_i),(x'_j,y'_j)\}:p(x_i,y_i)*p(x'_j,y'_j)$ and  $\{(x_i,y_i)\} \{(x'_j,y'_j)\}: 0$ otherwise we will put  $\{(x_i,y_i)\} \{(x'_j,y'_j)\}:p(x_i,y_i)*p(x'_j,y'_j)$
+Now we will merge edge table to find a table for a clique as follows. Let's there is a entry in the edge table between node $i$ and $j$ is $\{(x_i,y_i),(x'_j,y'_j)\}:p(x_i,y_i)*p(x'_j,y'_j)$. We will be able to merge the above entry to another entry in different edge table if there is a common node location in same position as previous edge table entry. For example if there is another entry in the edge table between node $i$ and $k$ is $\{(x_i,y_i),(x''_k,y''_k)\}:p(x_i,y_i)*p(x''_k,y''_k)$. So after merging the new entry will be $\{(x_i,y_i),(x'_j,y'_j),(x''_k,y''_k)\}:\frac{p(x_i,y_i)*p(x'_j,y'_j)*p(x_i,y_i)*p(x''_k,y''_k)}{p(x_i,y_i)}$. 
+\subsection{Verification Cases}
+
+\label{subsec:vc}
+\section{Simulation Results}
+
+
+% ------------------------------------------------------------
+%\section{ References}
+\bibliographystyle{plain} 
+\bibliography{final}
+% ------------------------------------------------------------
+%\hLine{2 in}
+\end{document}

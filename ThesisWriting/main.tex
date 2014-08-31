@@ -1,0 +1,349 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Make sure to edit document variables in the Thesis.cls file
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt, oneside]{Thesis} % The default font size and one-sided printing (no margin offsets)
+
+\graphicspath{{Figures/}} % Specifies the direcory where pictures are stored
+\usepackage{epstopdf}
+\usepackage{titlesec}
+\usepackage[square, numbers, comma, sort&compress]{natbib}
+\usepackage[ruled,boxed]{algorithm2e}
+\usepackage{enumitem,amsmath,amsthm}
+\usepackage{amssymb}
+ % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+%\hypersetup{linkcolor=black,urlcolor=black,citecolor=black,colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+\title{\ttitle} % Defines the thesis title - don't touch this
+%\long\def \/*#1*/{}
+%\titlespacing*{\chapter}
+\titlespacing*{\chapter}{0pt}{-80pt}{0pt}
+\begin{document}
+\pagestyle{plain}
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\setstretch{1.2} % Line spacing of 1.3
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+%\fancyhead{} % Clears all page headers and footers
+%\rhead{\thepage} % Sets the right side header to show the page number
+%\lhead{} % Clears the left side page header
+
+%\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+%\newtheorem{lemma}{Lemma}
+% \newtheorem{thm}{Theorem}
+\newtheorem{thm}{{\break \noindent {\bf Theorem}}}
+
+\newcommand{\loc}   	{ {\mathrm {Loc}} }
+\newcommand{\ACONN}   { {\mathrm {A\mbox{-}CONN}} }
+\newcommand{\SCONN}   { {\mathrm {S\mbox{-}CONN}} }
+\newcommand{\ARCONN}   { {\mathrm {AR\mbox{-}CONN}} }
+\newcommand{\SRCONN}   { {\mathrm {SR\mbox{-}CONN}} }
+\newcommand{\GV}   { {\mathrm {G=(V,E_G,Loc,p)} }}
+
+\newcommand{\fConn}   	{ {\mathrm {Conn}} }
+
+\newcommand{\nReq}    { {n_{req}} }
+\newcommand{\boldS}   { \mathbf{S}}
+\newcommand{\DCH}     { {DCH} }
+
+%% -- older paper --
+
+\newcommand{\starEqual}   { {\;{\scriptstyle *} \! =} }
+\newcommand{\plusEqual}   { {\;{\scriptstyle +} \! =} }
+%\newcommand{\plusplus}    { {\scriptstyle \!+\!+} }
+
+%\newcommand{\starEqual}   { {\; {\mathtt *=}} }
+%\newcommand{\plusEqual}   { {\; \mathtt{+=}} }
+
+% --------------------
+\newcommand{\set}[1]    {{ \{ #1 \} }}
+\newcommand{\iin}[1]    {\hspace*{#1in}}
+
+\newcommand{\ol}[1]     {\overline{#1}}
+
+\newcommand{\Prob}[1]   { {\bf \mathrm{Prob}} \left[ #1 \right] }
+\newcommand{\aPr}	{ {\mathrm  {Pr}} }
+
+\newcommand {\nwline} {\hfill\break}
+% PDF meta-data
+%\hypersetup{pdftitle={\ttitle}}
+%\hypersetup{pdfsubject=\subjectname}
+%\hypersetup{pdfauthor=\authornames}
+%\hypersetup{pdfkeywords=\keywordnames}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+\begin{center}
+
+%\textsc{\LARGE University of Alberta}\\[1.5cm] % University name
+%\textsc{\Large Master Thesis}\\[0.5cm] % Thesis type
+
+%\HRule \\[0.4cm] % Horizontal line
+{\large \bfseries Probabilistic Connectivity of Underwater Sensor Networks}\\[0.4cm] % Thesis title
+%\HRule \\[1.5cm] % Horizontal line
+\vspace{0.3 cm}
+%\begin{minipage}[0.9\textwidth]
+%\begin{flushleft} \large
+{\em by}\\
+\vspace{0.5 cm}
+{Md Asadul Islam}\\ % Author name - remove the \href bracket to remove the link
+\vspace{2 cm}
+%\end{flushleft}
+%\end{minipage}
+%\begin{minipage}{0.5\textwidth}
+%\begin{flushright} \large
+%\emph{Supervisor:} \\
+%{Professor Ehab S. Elmallah} % Supervisor name - remove the \href bracket to remove the link  
+%\end{flushright}
+%\end{minipage}\\[3cm]
+ 
+ \textit{A thesis submitted in partial fulfilment of the requirements for the degree of }\\[0.4cm] % University requirement text
+%\textit{in the}\\[0.4cm]
+%\groupname\\\deptname\\[2cm] % Research group name and department name
+ {\em Master of Science}\\
+ 
+ \vspace*{0.4 cm}
+ 
+ 
+ {\em Department of Computing Science}\\
+  \vspace*{0.4 cm}
+ {\em University of Alberta}
+%{\large \today}\\[4cm] % Date
+%\includegraphics{Logo} % University/department logo - uncomment to place it
+ 
+\vfill
+\textcopyright Md Asadul Islam, 2014
+\end{center}
+
+\end{titlepage}
+%\newpage
+%\textbf{Exam Committee}\\\\
+%\examname
+%
+%%----------------------------------------------------------------------------------------
+%%	DECLARATION PAGE
+%%	Your institution may give you a different text to place here
+%%----------------------------------------------------------------------------------------
+%%%\comment
+%%\Declaration{
+%%
+%%\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+%%
+%%I, \authornames, declare that this thesis titled, '\ttitle' and the work presented in it are my own. I confirm that:
+%%
+%%\begin{itemize} 
+%%\item[\tiny{$\blacksquare$}] This work was done wholly or mainly while in candidature for a research degree at this University.
+%%\item[\tiny{$\blacksquare$}] Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
+%%\item[\tiny{$\blacksquare$}] Where I have consulted the published work of others, this is always clearly attributed.
+%%\item[\tiny{$\blacksquare$}] Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
+%%\item[\tiny{$\blacksquare$}] I have acknowledged all main sources of help.
+%%\item[\tiny{$\blacksquare$}] Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
+%%\end{itemize}
+%% 
+%%Signed:\\
+%%\rule[1em]{25em}{0.5pt} % This prints a line for the signature
+%% 
+%%Date:\\
+%%\rule[1em]{25em}{0.5pt} % This prints a line to write the date
+%%}
+%%\endcomment
+%\clearpage % Start a new page
+%
+%%----------------------------------------------------------------------------------------
+%%	QUOTATION PAGE
+%%----------------------------------------------------------------------------------------
+
+%\pagestyle{empty} % No headers or footers for the following pages
+%\end{comment}
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+\setcounter{page}{2}
+\setstretch{2} 
+{\Huge \textbf{Abstract}} % Add the "Abstract" page entry to the Contents
+
+%\abstract{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+
+Underwater sensor networks (UWSNs) have recently attracted increasing research attention for their potential use in supporting many important applications and services.
+Examples include scientific applications such as studies of marine life, industrial applications such as monitoring underwater oil pipelines, humanitarian applications such as search and survey missions, and homeland security applications such as monitoring of ships and port facilities. 
+The design of UWSNs, however, faces many challenges due to harsh water environments.
+In particular, nodes in such networks are subject to small scale and large scale uncontrollable movements due to water currents.
+Since maintaining network connectivity is crucial for performing many tasks that require node collaboration, it becomes important to quantify the likelihood that a network maintains connectivity during some interval of time of interest.
+In this thesis, we approach the above challenging problem by adopting a probabilistic model to describe node location uncertainty in semi-mobile and mobile deployments. Using this model, we devise a notion of probabilistic graphs to tackle the problem.
+We then formalize four probabilistic network connectivity problems that deal with fully and partially connected networks that may utilize relay nodes.
+Using the theory of partial k-trees, we devise algorithms that run in polynomial time, for any fixed k, to solve the formalized problems.
+We present simulation experiments to illustrate the use of the devised algorithms in the topological design of UWSNs.
+
+\clearpage
+%%----------------------------------------------------------------------------------------
+%%	ACKNOWLEDGEMENTS
+%%----------------------------------------------------------------------------------------
+
+\setstretch{1.5} % Reset the line-spacing to 1.3 for body text (if it has changed)
+
+\acknowledgements{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+First of all, I would like to thank my supervisor, Professor Ehab S. Elmallah, for his guidance throughout my Master degree. I am also very grateful for his valuable insight and our frequent
+meetings. He also helped me find the topic for this thesis. Above all, he has been a true mentor for me throughout my graduate student life at the University of Alberta and guided me by providing appropriate support to become a successful graduate student. 
+
+Besides my advisor, I would also like to thank the rest of my thesis committee: Professor Lorna Stewart and Professor Janelle Harms for reviewing my work and providing valuable insights and suggestions.
+
+I would like to express my thanks to numerous teacher and friends at the department who have been there for me throughout the coursework and my thesis. I would like to thank Professor Jia You for being a mentor during my coursework. I would also like to particularly mention Mohammed Elmorsy, Israat Haque, Saiful Shuvo and Solimul Chowdhury for their support.
+
+Last but not the least, I would like to thank my family: my wife Musfika Islam Choity for her patience and being with me throughout my thesis and my parents Md Rafiqul Islam and Hamida Khatun, for giving birth to me at the first place and supporting me spiritually throughout my life.
+
+
+}
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+%\pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+
+%\lhead{\emph{Contents}} % Set the left side page header to "Contents"
+\tableofcontents % Write out the Table of Contents
+%
+%\lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
+\listoffigures % Write out the List of Figures
+%
+%\lhead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
+\listoftables % Write out the List of Tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+%
+%\clearpage % Start a new page
+%
+%\setstretch{1.5} % Set the line spacing to 1.5, this makes the following tables easier to read
+%
+%\lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
+%\listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
+%{
+%\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere \\
+%%\textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
+%}
+%
+%%----------------------------------------------------------------------------------------
+%%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%%----------------------------------------------------------------------------------------
+%
+%\clearpage % Start a new page
+%
+%\lhead{\emph{Physical Constants}} % Set the left side page header to "Physical Constants"
+%
+%\listofconstants{lrcl} % Include a list of Physical Constants (a four column table)
+%{
+%Speed of Light & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}^{-\mbox{s}}$ (exact)\\
+%% Constant Name & Symbol & = & Constant Value (with units) \\
+%}
+%
+%%----------------------------------------------------------------------------------------
+%%	SYMBOLS
+%%----------------------------------------------------------------------------------------
+%%
+%\clearpage % Start a new page
+%
+%\lhead{\emph{Symbols}} % Set the left side page header to "Symbols"
+%
+%\listofnomenclature{ll} % Include a list of Symbols (a three column table)
+%{
+%UWSN & Underwater Sensor Network\\
+%ESRT & Event-to-Sink Reliable Transport\\
+%TCP & Transmission Control Protocol\\
+%CSMA & Carrier Sense Multiple Access\\
+%MAC & Media Access Control\\
+%CDMA & Code Division Multiple Access \\
+%FDMA & Frequency Division Multiple Access\\
+%QAM & Quadrature Amplitude Modulation\\
+%PSK &  Phase Shift Keying\\
+%FSK & Frequency Shift Keying\\
+%& \\
+%$PES$ & Perfect Elimination Sequence \\
+%$A$-$CONN$ & All Node Connectivity \\
+%$AR$-$CONN$ & All Node Connectivity with the presence of Relays\\
+%$S$-$CONN$ & A Subset of Nodes Connectivity \\
+%$SR$-$CONN$ & A Subset of Nodes Connectivity with the presence of Relays\\
+%% Symbol & Name & Unit \\
+%
+% & \\ % Gap to separate the Roman symbols from the Greek
+%
+%% Symbol & Name & Unit \\
+%}
+
+%%----------------------------------------------------------------------------------------
+%%	DEDICATION
+%%----------------------------------------------------------------------------------------
+%
+%\setstretch{1.3} % Return the line spacing back to 1.3
+%
+%\pagestyle{empty} % Page style needs to be empty for this page
+%
+%\dedicatory{For/Dedicated to/To my\ldots} % Dedication text
+%
+%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+%*/
+%%----------------------------------------------------------------------------------------
+%%	THESIS CONTENT - CHAPTERS
+%%----------------------------------------------------------------------------------------
+%
+\pagestyle{plain}
+\setstretch{1.5} 
+\mainmatter % Begin numeric (1,2,3...) page numbering
+%
+%\pagestyle{fancy} % Return the page headers back to the "fancy" style
+%
+%% Include the chapters of the thesis as separate files from the Chapters folder
+%% Uncomment the lines as you write the chapters
+%
+%\lhead{\emph{Chapter1}}
+\input{Chapters/Chapter1}
+\input{Chapters/Chapter2} 
+\input{Chapters/Chapter3}
+\input{Chapters/Chapter4} 
+\input{Chapters/Chapter5} 
+\input{Chapters/Chapter6} 
+%
+%%----------------------------------------------------------------------------------------
+%%	THESIS CONTENT - APPENDICES
+%%----------------------------------------------------------------------------------------
+%
+%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+%
+%\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+%
+%% Include the appendices of the thesis as separate files from the Appendices folder
+%% Uncomment the lines as you write the Appendices
+%
+%\input{Appendices/AppendixA}
+%%\input{Appendices/AppendixB}
+%%\input{Appendices/AppendixC}
+%
+%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+%
+%\backmatter
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\label{Bibliography}
+
+\lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
+
+\bibliographystyle{plain} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+
+\bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+
+\end{document}  

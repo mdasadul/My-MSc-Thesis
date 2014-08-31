@@ -1,0 +1,16 @@
+\chapter{Concluding Remarks}
+% Need to writedown our contribution
+The work in this thesis has been motivated by recent interest in UWSNs as a platform for preforming many useful tasks. A challenge arises since sensor nodes incur small scale and large scale movements that can disrupt network connectivity. Thus, tools for quantifying the likelihood that a network remains completely or partially connected become of interest.
+
+To this end, the thesis has formalized 4 probabilistic connectivity problems, denoted $\ACONN,$ $ \SCONN, \ARCONN, \mbox{ and } \SRCONN$. The obtained results show that all of the 4 problems admit polynomial time algorithms on $k$-trees (and their subgraphs), for any fixed $k$. The running times of the algorithms, however, increase exponentially as $k$ increases. Thus, more work needs to be done towards obtaining more effective algorithms.\\
+For future research, we propose the following directions.
+\begin{itemize}[noitemsep]
+\item As mentioned in Chapter 1, the class of probabilistic connectivity problems discussed in the thesis shares some similarity with the class of network reliability problems discussed in \cite{Co87, shier1991network}. Both classes of problems utilize a type of probabilistic graphs to formalize the problems, and core problems in each class are $\#P\mbox{-}hard$ problems.
+
+In ~\cite{Co87}, a number of methods are devised to cope with the problems. These methods aim at finding classes of graphs for which the problems can be solved effectively, as well as deriving lower and upper bounds from disjoint or overlapping subgraphs that form either pathsets or cutsets. Investigating the applicability of such methods to probabilistic connectivity problems appears to be a worthwhile direction.
+
+\item Some wireless sensor network applications require that sensor nodes repeatedly perform data collection rounds. In each round, sensor nodes collect data and forward the collected data to the sink node using multihop routes. Existing results in the literature (e.g., \cite{pu2013comparing}) have shown that the direction of water currents influence delays in underwater acoustic communication. Given randomness in the position of UWSN nodes, it becomes interesting to analyze the delays incurred in typical data collection rounds.
+\item Area coverage analysis is a topic that has received attention in UWSNs. In light of node mobility in UWSNs, it appears worthwhile to investigate area coverage assuming a probabilistic locality model of the nodes.
+\end{itemize}
+
+

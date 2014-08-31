@@ -1,0 +1,10 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: ThesisWriteup.aux
+The style file: plain.bst
+Database file #1: ThesisWriteup.bib
+I was expecting a `,' or a `}'---line 69 of file ThesisWriteup.bib
+ : 
+ : @inproceedings{rice2000evolution,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in cruz2008ocean
+(There was 1 error message)

@@ -1,0 +1,5 @@
+You will be able to run the program by the following commands 
+			g++ main.cpp
+
+The input file and output file is specified in function preproceesing() of main.cpp
+All the file in the directory except main.cpp makefile and output.txt are input file. So you will be able to change the input file from preproceesing() of main.cpp

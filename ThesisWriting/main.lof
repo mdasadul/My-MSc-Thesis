@@ -1,0 +1,37 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Example UWSNs.\relax }}{6}{figure.caption.10}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces A 3D plot of stream function \ref {eq:sf}\relax }}{9}{figure.caption.15}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces A plot of stream function \ref {eq:sf} at $t=0$.\relax }}{9}{figure.caption.17}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Start and end points of 50 nodes\relax }}{10}{figure.caption.19}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Probabilistic distribution obtained using a superimposed grid\relax }}{10}{figure.caption.19}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces An example probabilistic network\relax }}{14}{figure.caption.30}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A fragment of a 3-tree\relax }}{19}{figure.caption.47}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A partial 3-tree\relax }}{20}{figure.caption.55}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Tree decomposition\relax }}{21}{figure.caption.63}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A tree network\relax }}{30}{figure.caption.100}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Pseudo-code for function $ {\mathrm {Conn}} $\relax }}{32}{figure.caption.103}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A fragment of a $3$-tree \relax }}{39}{figure.caption.116}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A 3-tree fragment \relax }}{40}{figure.caption.118}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A UWSN modelled by a $3$-tree\relax }}{42}{figure.caption.125}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Merging two partitions\relax }}{48}{figure.caption.162}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Merging two tables\relax }}{49}{figure.caption.179}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Deleting node $v_i$\relax }}{50}{figure.caption.181}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Network $G_{10}$\relax }}{53}{figure.caption.199}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Network $G_{12}$\relax }}{54}{figure.caption.200}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Network $G_{15}$\relax }}{55}{figure.caption.201}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Connectivity versus transmission range with random subgraph selection\relax }}{56}{figure.caption.209}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Connectivity versus transmission range with greedy subgraph selection\relax }}{56}{figure.caption.209}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A fragment of a 3-tree\relax }}{60}{figure.caption.218}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces A state $S$ on $\{v_a,v_b,v_i,v_j,v_k\}$\relax }}{60}{figure.caption.218}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Network $G_{10}$\relax }}{64}{figure.caption.230}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Network $G_{10,3}$\relax }}{64}{figure.caption.231}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Connectivity versus transmission range\relax }}{65}{figure.caption.237}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces A 3-tree fragment\relax }}{66}{figure.caption.242}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces A state $S$ on $\{v_a,v_b,v_i,v_j,v_k\}$\relax }}{66}{figure.caption.242}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Connectivity versus $n_{req}$\relax }}{70}{figure.caption.252}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Connectivity versus $n_{req}$ and transmission range\relax }}{70}{figure.caption.252}
+\addvspace {10\p@ }

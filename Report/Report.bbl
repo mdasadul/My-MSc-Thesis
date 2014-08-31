@@ -1,0 +1,359 @@
+\begin{thebibliography}{10}
+
+\bibitem{akkaya2009self}
+Kemal Akkaya and Andrew Newell.
+\newblock Self-deployment of sensors for maximized coverage in underwater
+  acoustic sensor networks.
+\newblock {\em Computer Communications}, 32(7):1233--1244, 2009.
+
+\bibitem{Nazrul2008}
+S.~M.~Nazrul Alam and Zygmunt~J. Haas.
+\newblock Coverage and connectivity in three-dimensional underwater sensor
+  networks.
+\newblock {\em Wireless Communication and Mobile Computing (WCMC)},
+  8(8):995--1009, 2008.
+
+\bibitem{ammari2010study}
+Habib~M Ammari and Sajal~K Das.
+\newblock A study of k-coverage and measures of connectivity in 3d wireless
+  sensor networks.
+\newblock {\em Computers, IEEE Transactions on}, 59(2):243--257, 2010.
+
+\bibitem{ayaz2011survey}
+Muhammad Ayaz, Imran Baig, Azween Abdullah, and Ibrahima Faye.
+\newblock A survey on routing techniques in underwater wireless sensor
+  networks.
+\newblock {\em Journal of Network and Computer Applications}, 34(6):1908--1927,
+  2011.
+
+\bibitem{beaujean2008hermes}
+P-PJ Beaujean, Edward~A Carlson, John Spruance, and Dion Kriel.
+\newblock Hermes-a high-speed acoustic modem for real-time transmission of
+  uncompressed image and status transmission in port environment and very
+  shallow water.
+\newblock In {\em OCEANS 2008}, pages 1--9. IEEE, 2008.
+
+\bibitem{bower1985gulf}
+Amy~S Bower, H~Thomas Rossby, and John~L Lillibridge.
+\newblock The gulf stream-barrier or blender?
+\newblock {\em Journal of Physical Oceanography}, 15(1):24--32, 1985.
+
+\bibitem{bower1989evidence}
+AS~Bower and T~Rossby.
+\newblock Evidence of cross-frontal exchange processes in the gulf stream based
+  on isopycnal rafos float data.
+\newblock {\em Journal of Physical Oceanography}, 19(9):1177--1190, 1989.
+
+\bibitem{caruso2008meandering}
+Antonio Caruso, Francesco Paparella, Luiz Filipe~M Vieira, Melike Erol, and
+  Mario Gerla.
+\newblock The meandering current mobility model and its impact on underwater
+  mobile sensor networks.
+\newblock In {\em INFOCOM 2008. The 27th Conference on Computer Communications.
+  IEEE}, pages 221--225. IEEE, 2008.
+
+\bibitem{che2010re}
+Xianhui Che, Ian Wells, Gordon Dickers, Paul Kear, and Xiaochun Gong.
+\newblock Re-evaluation of rf electromagnetic communication in underwater
+  sensor networks.
+\newblock {\em Communications Magazine, IEEE}, 48(12):143--151, 2010.
+
+\bibitem{6757189}
+K.~Chen, M.~Ma, E.~Cheng, F.~Yuan, and W.~Su.
+\newblock A survey on mac protocols for underwater wireless sensor networks.
+\newblock {\em Communications Surveys Tutorials, IEEE}, PP(99):1--15, 2014.
+
+\bibitem{climent2014underwater}
+Salvador Climent, Antonio Sanchez, Juan~Vicente Capella, Nirvana Meratnia, and
+  Juan~Jose Serrano.
+\newblock Underwater acoustic wireless sensor networks: Advances and future
+  trends in physical, mac and routing layers.
+\newblock {\em Sensors}, 14(1):795--833, 2014.
+
+\bibitem{doniec2013end}
+Marek Doniec, Michael Angermann, and Daniela Rus.
+\newblock An end-to-end signal strength model for underwater optical
+  communications.
+\newblock 2013.
+
+\bibitem{doniec2009aquaoptical}
+Marek Doniec, Iuliu Vasilescu, Mandar Chitre, Carrick Detweiler, Matthias
+  Hoffmann-Kuhnt, and Daniela Rus.
+\newblock Aquaoptical: A lightweight device for high-rate long-range underwater
+  point-to-point communication.
+\newblock In {\em OCEANS 2009, MTS/IEEE Biloxi-Marine Technology for Our
+  Future: Global and Local Challenges}, pages 1--6. IEEE, 2009.
+
+\bibitem{doniec2013robust}
+Marek Doniec, Anqi Xu, and Daniela Rus.
+\newblock Robust real-time underwater digital video streaming using optical
+  communication.
+\newblock In {\em Robotics and Automation (ICRA), 2013 IEEE International
+  Conference on}, pages 5117--5124. IEEE, 2013.
+
+\bibitem{du2014lb}
+Xiu-juan DU, Ke-jun HUANG, Sheng-lin LAN, Zhen-xing FENG, and Fan LIU.
+\newblock Lb-agr: level-based adaptive geo-routing for underwater sensor
+  network.
+\newblock {\em The Journal of China Universities of Posts and
+  Telecommunications}, 21(1):54--59, 2014.
+
+\bibitem{Elmallah88partitioningthe}
+Ehab~S. Elmallah and Charles~J. Colbourn.
+\newblock Partitioning the edges of a planar graph into two partial k-trees.
+\newblock In {\em In Proc. 19th Southeastern Conf. on Combinatorics, Graph
+  Theory, and Computing}, pages 69--80, 1988.
+
+\bibitem{ProfEhab}
+E.S. Elmallah, H.S. Hassanein, and H.M. AboElFotoh.
+\newblock On the use of a simple mobility model in ad hoc routing.
+\newblock In {\em Parallel Processing Workshops, 2001. International Conference
+  on}, pages 479--484, 2001.
+
+\bibitem{elrashidi2012underwater}
+Ali Elrashidi, Abdelrahman Elleithy, Majed Albogame, and Khaled Elleithy.
+\newblock Underwater wireless sensor network communication using
+  electromagnetic waves at resonance frequency 2.4 ghz.
+\newblock In {\em Proceedings of the 15th Communications and Networking
+  Simulation Symposium}, page~13. Society for Computer Simulation
+  International, 2012.
+
+\bibitem{erol2011performance}
+Melike Erol-Kantarci, Sema Oktug, Luiz Vieira, and Mario Gerla.
+\newblock Performance evaluation of distributed localization techniques for
+  mobile underwater acoustic sensor networks.
+\newblock {\em Ad Hoc Networks}, 9(1):61--72, 2011.
+
+\bibitem{Farrell201262}
+Alan~C. Farrell and Jun Peng.
+\newblock Performance of {IEEE} 802.11 {MAC} in underwater wireless channels.
+\newblock {\em Procedia Computer Science}, 10(0):62 -- 69, 2012.
+\newblock \{ANT\} 2012 and MobiWIS 2012.
+
+\bibitem{flierl1981particle}
+Glenn~R Flierl.
+\newblock Particle motions in large-amplitude wave fields.
+\newblock {\em Geophysical \& Astrophysical Fluid Dynamics}, 18(1-2):39--74,
+  1981.
+
+\bibitem{ghosh2008coverage}
+Amitabha Ghosh and Sajal~K Das.
+\newblock Coverage and connectivity issues in wireless sensor networks: A
+  survey.
+\newblock {\em Pervasive and Mobile Computing}, 4(3):303--334, 2008.
+
+\bibitem{han2013m}
+Seongwon Han, Youngtae Noh, Uichin Lee, and Mario Gerla.
+\newblock M-fama: A multi-session mac protocol for reliable underwater acoustic
+  streams.
+\newblock In {\em INFOCOM, 2013 Proceedings IEEE}, pages 665--673. IEEE, 2013.
+
+\bibitem{hanson2008high}
+Frank Hanson and Stojan Radic.
+\newblock High bandwidth underwater optical communication.
+\newblock {\em Applied Optics}, 47(2):277--283, 2008.
+
+\bibitem{heidemann2012underwater}
+John Heidemann, Milica Stojanovic, and Michele Zorzi.
+\newblock Underwater sensor networks: applications, advances and challenges.
+\newblock {\em Philosophical Transactions of the Royal Society A: Mathematical,
+  Physical and Engineering Sciences}, 370(1958):158--175, 2012.
+
+\bibitem{bworld}
+LinkQuest Inc.
+\newblock {SoundLink Underwater Acoustic Modems}.
+\newblock \url{http://www.link-quest.com/html/uwm_hr.pdf}, 2008.
+\newblock [Online; accessed 03 April 2014].
+
+\bibitem{evolo}
+Hydro International.
+\newblock {Evologic Underwater Acoustic Modems}.
+\newblock
+  \url{http://www.hydro-international.com/files/productsurvey_v_pdfdocument_15.pdf},
+  2007.
+\newblock [Online; accessed 03 April 2014].
+
+\bibitem{jaffe2006sensor}
+Jules Jaffe and Curt Schurgers.
+\newblock Sensor networks of freely drifting autonomous underwater explorers.
+\newblock In {\em Proceedings of the 1st ACM international workshop on
+  Underwater networks}, pages 93--96. ACM, 2006.
+
+\bibitem{kong2005building}
+Jiejun Kong, Jun-hong Cui, Dapeng Wu, and Mario Gerla.
+\newblock Building underwater ad-hoc networks and sensor networks for large
+  scale real-time aquatic applications.
+\newblock In {\em Military Communications Conference, 2005. MILCOM 2005. IEEE},
+  pages 1535--1541. IEEE, 2005.
+
+\bibitem{lee2010pressure}
+Uichin Lee, Paul Wang, Youngtae Noh, FLM Vieira, Mario Gerla, and Jun-Hong Cui.
+\newblock Pressure routing for underwater sensor networks.
+\newblock In {\em INFOCOM, 2010 Proceedings IEEE}, pages 1--9. IEEE, 2010.
+
+\bibitem{li2014channel}
+Jun Li and Myl{\`e}ne Toulgoat.
+\newblock Em channel characteristics and their impact on mac layer performance
+  in underwater surveillance networks.
+\newblock {\em Wireless Communications and Mobile Computing}, 2014.
+
+\bibitem{luo2009double}
+Ji~Luo, Dan Wang, and Qian Zhang.
+\newblock Double mobility: coverage of the sea surface with mobile sensor
+  networks.
+\newblock In {\em INFOCOM 2009, IEEE}, pages 118--126. IEEE, 2009.
+
+\bibitem{luo2012double}
+Ji~Luo, Dan Wang, and Qian Zhang.
+\newblock On the double mobility problem for water surface coverage with mobile
+  sensor networks.
+\newblock {\em Parallel and Distributed Systems, IEEE Transactions on},
+  23(1):146--159, 2012.
+
+\bibitem{noh2013vapr}
+Youngtae Noh, Uichin Lee, Paul Wang, Brian Sung~Chul Choi, and Mario Gerla.
+\newblock Vapr: Void-aware pressure routing for underwater sensor networks.
+\newblock {\em Mobile Computing, IEEE Transactions on}, 12(5):895--908, 2013.
+
+\bibitem{otnes2012underwater}
+Roald Otnes, Alfred Asterjadhi, Paolo Casari, Michael Goetz, Thor Hus{\o}y,
+  Ivor Nissen, Knut Rimstad, Paul van Walree, and Michele Zorzi.
+\newblock {\em Underwater acoustic networking techniques}.
+\newblock Springer, 2012.
+
+\bibitem{partan2007survey}
+Jim Partan, Jim Kurose, and Brian~Neil Levine.
+\newblock A survey of practical issues in underwater networks.
+\newblock {\em ACM SIGMOBILE Mobile Computing and Communications Review},
+  11(4):23--33, 2007.
+
+\bibitem{proakis2001shallow}
+John~G Proakis, Ethem~M Sozer, Joseph~A Rice, and Milica Stojanovic.
+\newblock Shallow water acoustic networks.
+\newblock {\em Communications Magazine, IEEE}, 39(11):114--119, 2001.
+
+\bibitem{pu2013comparing}
+Lina Pu, Yu~Luo, Haining Mo, Zheng Peng, Jun-Hong Cui, and Zaihan Jiang.
+\newblock Comparing underwater mac protocols in real sea experiment.
+\newblock In {\em IFIP Networking Conference, 2013}, pages 1--9. IEEE, 2013.
+
+\bibitem{regier1979float}
+Lloyd Regier and Henry Stommel.
+\newblock Float trajectories in simple kinematic flows.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  76(10):4760--4764, 1979.
+
+\bibitem{senel2013autonomous}
+Fatih Senel, Kemal Akkaya, and Turgay Yilmaz.
+\newblock Autonomous deployment of sensors for maximized coverage and
+  guaranteed connectivity in underwater acoustic sensor networks.
+\newblock In {\em Local Computer Networks (LCN), 2013 IEEE 38th Conference on},
+  pages 211--218. IEEE, 2013.
+
+\bibitem{shah2009survey}
+Ghalib~Asadullah Shah.
+\newblock A survey on medium access control in underwater acoustic sensor
+  networks.
+\newblock In {\em Advanced Information Networking and Applications Workshops,
+  2009. WAINA'09. International Conference on}, pages 1178--1183. IEEE, 2009.
+
+\bibitem{shen2014comparative}
+Jian Shen, Jin Wang, Jianwei Zhang, and Shunfeng Wang.
+\newblock A comparative study on routing protocols in underwater sensor
+  networks.
+\newblock In {\em Advanced Technologies, Embedded and Multimedia for
+  Human-centric Computing}, pages 593--602. Springer, 2014.
+
+\bibitem{stship}
+Milica Stojanovic.
+\newblock On the relationship between capacity and distance in an underwater
+  acoustic communication channel.
+\newblock {\em ACM SIGMOBILE Mobile Computing and Communications Review},
+  11(4):34--43, 2007.
+
+\bibitem{stojanovic2008underwater}
+Milica Stojanovic.
+\newblock Underwater acoustic communications: Design considerations on the
+  physical layer.
+\newblock In {\em Wireless on Demand Network Systems and Services, 2008. WONS
+  2008. Fifth Annual Conference on}, pages 1--10. IEEE, 2008.
+
+\bibitem{stojanovic2009underwater}
+Milica Stojanovic and James Preisig.
+\newblock Underwater acoustic communication channels: Propagation models and
+  statistical characterization.
+\newblock {\em Communications Magazine, IEEE}, 47(1):84--89, 2009.
+
+\bibitem{tung2014power}
+Nguyen~Thanh Tung and Nguyen~Sy Minh.
+\newblock Power-aware routing for underwater wireless sensor network.
+\newblock In {\em Context-Aware Systems and Applications}, pages 97--101.
+  Springer, 2014.
+
+\bibitem{uribe2009radio}
+Carlos Uribe and Walter Grote.
+\newblock Radio communication model for underwater wsn.
+\newblock In {\em New Technologies, Mobility and Security (NTMS), 2009 3rd
+  International Conference on}, pages 1--5. IEEE, 2009.
+
+\bibitem{wahid2014mrp}
+Abdul Wahid, Sungwon Lee, Dongkyun Kim, and Kyung-Shik Lim.
+\newblock Mrp: A localization-free multi-layered routing protocol for
+  underwater wireless sensor networks.
+\newblock {\em Wireless Personal Communications}, pages 1--16, 2014.
+
+\bibitem{wald1983steiner}
+Joseph~A Wald and Charles~J Colbourn.
+\newblock Steiner trees in probabilistic networks.
+\newblock {\em Microelectronics Reliability}, 23(5):837--840, 1983.
+
+\bibitem{wald1983steiner1}
+Joseph~A Wald and Charles~J Colbourn.
+\newblock Steiner trees, partial 2--trees, and minimum ifi networks.
+\newblock {\em Networks}, 13(2):159--167, 1983.
+
+\bibitem{wang2009token}
+Ping Wang, Lin Zhang, Bhaskar Krishnamachari, and Victor~OK Li.
+\newblock Token-based data collection protocols for multi-hop underwater
+  acoustic sensor networks: short paper.
+\newblock In {\em Proceedings of the Fourth ACM International Workshop on
+  UnderWater Networks}, page~10. ACM, 2009.
+
+\bibitem{xiao2010underwater}
+Yang Xiao.
+\newblock {\em Underwater acoustic sensor networks}.
+\newblock CRC Press, 2010.
+
+\bibitem{ying2011combining}
+Lei Ying, Sanjay Shakkottai, Aneesh Reddy, and Shihuan Liu.
+\newblock On combining shortest-path and back-pressure routing over multihop
+  wireless networks.
+\newblock {\em IEEE/ACM Transactions on Networking (TON)}, 19(3):841--854,
+  2011.
+
+\bibitem{yunus2010survey}
+Farizah Yunus, Sharifah~HS Ariffin, and Yasser Zahedi.
+\newblock A survey of existing medium access control (mac) for underwater
+  wireless sensor network (uwsn).
+\newblock In {\em Mathematical/Analytical Modelling and Computer Simulation
+  (AMS), 2010 Fourth Asia International Conference on}, pages 544--549. IEEE,
+  2010.
+
+\bibitem{zhang2008analysis}
+Wenyi Zhang, Milica Stojanovic, and Urbashi Mitra.
+\newblock Analysis of a simple multihop underwater acoustic network.
+\newblock In {\em Proceedings of the third ACM international workshop on
+  Underwater Networks}, pages 3--10. ACM, 2008.
+
+\bibitem{zhou2010efficient}
+Zhong Zhou, Jun-Hong Cui, and Shengli Zhou.
+\newblock Efficient localization for large-scale underwater sensor networks.
+\newblock {\em Ad Hoc Networks}, 8(3):267--279, 2010.
+
+\bibitem{zhou2011scalable}
+Zhong Zhou, Zheng Peng, Jun-Hong Cui, Zhijie Shi, and Amvrossios~C Bagtzoglou.
+\newblock Scalable localization with mobility prediction for underwater sensor
+  networks.
+\newblock {\em Mobile Computing, IEEE Transactions on}, 10(3):335--348, 2011.
+
+\end{thebibliography}

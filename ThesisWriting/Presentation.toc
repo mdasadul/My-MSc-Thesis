@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Problem Formulation and Thesis Contributions}{3}{0}{1}
+\beamer@sectionintoc {2}{Overview on $k$-Trees and Partial $k$-Trees}{16}{0}{2}
+\beamer@sectionintoc {3}{Probabilistic Connectivity of Tree Network}{21}{0}{3}
+\beamer@sectionintoc {4}{$ {\mathrm {A\unhbox \voidb@x \hbox {-}CONN}} $ problem}{26}{0}{4}
+\beamer@sectionintoc {5}{$ {\mathrm {AR\unhbox \voidb@x \hbox {-}CONN}} $ and $ {\mathrm {SR\unhbox \voidb@x \hbox {-}CONN}} $ problems}{41}{0}{5}
+\beamer@sectionintoc {6}{Future Research Directions}{58}{0}{6}

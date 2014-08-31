@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Problem Formulation and Thesis Contributions}{3}{0}{1}
+\beamer@sectionintoc {2}{$ {\mathrm {A\unhbox \voidb@x \hbox {-}CONN}} $ problem}{10}{0}{2}
+\beamer@sectionintoc {3}{$ {\mathrm {AR\unhbox \voidb@x \hbox {-}CONN}} $ and $ {\mathrm {SR\unhbox \voidb@x \hbox {-}CONN}} $ problems}{15}{0}{3}
+\beamer@sectionintoc {4}{Future Research Directions}{23}{0}{4}

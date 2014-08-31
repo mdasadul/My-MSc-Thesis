@@ -1,0 +1,358 @@
+\begin{thebibliography}{10}
+
+\bibitem{akkaya2009self}
+K.~Akkaya and A.~Newell.
+\newblock Self-deployment of sensors for maximized coverage in underwater
+  acoustic sensor networks.
+\newblock {\em Computer Communications}, 32(7):1233--1244, 2009.
+
+\bibitem{akyildiz2005underwater}
+I.~F. Akyildiz, D.~Pompili, and T.~Melodia.
+\newblock Underwater acoustic sensor networks: research challenges.
+\newblock {\em Ad hoc networks}, 3(3):257--279, 2005.
+
+\bibitem{Nazrul2008}
+S.~M.~N. Alam and Z.~J. Haas.
+\newblock {Coverage and Connectivity in Three-Dimensional Underwater Sensor
+  Networks}.
+\newblock {\em Wireless Communication and Mobile Computing (WCMC)},
+  8(8):995--1009, 2008.
+
+\bibitem{ammari2010study}
+H.~M. Ammari and S.~K. Das.
+\newblock A {Study} of \textit{k}-coverage and measures of connectivity in {3D}
+  wireless sensor networks.
+\newblock {\em IEEE Transactions on Computers}, 59(2):243--257, 2010.
+
+\bibitem{arnborg1987complexity}
+S.~Arnborg, D.~G. Corneil, and A.~Proskurowski.
+\newblock Complexity of finding embeddings in a \textit{k}-tree.
+\newblock {\em {SIAM Journal on Algebraic Discrete Methods}}, 8(2):277--284,
+  1987.
+
+\bibitem{arnborg1991easy}
+S.~Arnborg, J.~Lagergren, and D.~Seese.
+\newblock Easy problems for tree-decomposable graphs.
+\newblock {\em Journal of Algorithms}, 12(2):308--340, 1991.
+
+\bibitem{arnborg1989linear}
+S.~Arnborg and A.~Proskurowski.
+\newblock Linear time algorithms for {NP}-hard problems restricted to partial
+  \textit{k}-trees.
+\newblock {\em Discrete Applied Mathematics}, 23(1):11--24, 1989.
+
+\bibitem{ayaz2011survey}
+M.~Ayaz, I.~Baig, A.~Abdullah, and I.~Faye.
+\newblock A survey on routing techniques in underwater wireless sensor
+  networks.
+\newblock {\em Journal of Network and Computer Applications}, 34(6):1908--1927,
+  2011.
+
+\bibitem{bayrakdar2011comparative}
+Y.~Bayrakdar, N.~Meratnia, and A.~Kantarci.
+\newblock A comparative view of routing protocols for underwater wireless
+  sensor networks.
+\newblock In {\em OCEANS, 2011 IEEE-Spain}, pages 1--5. IEEE, 2011.
+
+\bibitem{beineke1968enumeration}
+L.~W. Beineke and R.~E. Pippert.
+\newblock The enumeration of labelled 2-trees.
+\newblock {\em Notices American Mathematical Society}, 15:384, 1968.
+
+\bibitem{beineke1969number}
+L.~W. Beineke and R.~E. Pippert.
+\newblock The number of labelled \textit{k}-dimensional trees.
+\newblock {\em Journal of Combinatorial Theory}, 6(2):200--205, 1969.
+
+\bibitem{bodlander1988}
+H.~L. Bodlaender.
+\newblock Dynamic programming on graphs with bounded treewidth.
+\newblock In {\em Proceeding 15th International Colloquium on Automata,
+  Languages and Programming}, volume 317 of {\em Lecture Notes in Computer
+  Science}, pages 105--118. Springer Berlin Heidelberg, 1988.
+
+\bibitem{bodlaender1993linear}
+H.~L. Bodlaender.
+\newblock A linear time algorithm for finding tree-decompositions of small
+  treewidth.
+\newblock In {\em Proceedings of the twenty-fifth annual ACM symposium on
+  Theory of computing}, pages 226--234. ACM, 1993.
+
+\bibitem{bower1991simple}
+A.~S. Bower.
+\newblock A simple kinematic mechanism for mixing fluid parcels across a
+  meandering jet.
+\newblock {\em Journal of Physical Oceanography}, 21(1):173--180, 1991.
+
+\bibitem{bower1989evidence}
+A.~S. Bower and T.~Rossby.
+\newblock Evidence of cross-frontal exchange processes in the gulf stream based
+  on isopycnal rafos float data.
+\newblock {\em Journal of Physical Oceanography}, 19(9):1177--1190, 1989.
+
+\bibitem{brandstadt1999graph}
+A.~Brandst{\"a}dt, V.~Bang~Le, and J.~P. Spinrad.
+\newblock {\em Graph classes: a survey}, volume~3.
+\newblock {SIAM}, Philadelphia, PA, USA, 1999.
+
+\bibitem{brualdi2009introduction}
+R.~A. Brualdi.
+\newblock {\em Introductory combinatorics 5th Edition}.
+\newblock Pearson, New York, 2009.
+
+\bibitem{caruso2008meandering}
+A.~Caruso, F.~Paparella, L.~F.~M. Vieira, M.~Erol, and M.~Gerla.
+\newblock The meandering current mobility model and its impact on underwater
+  mobile sensor networks.
+\newblock In {\em The 27th Conference on Computer Communications IEEE INFOCOM},
+  pages 221--225. IEEE, 2008.
+
+\bibitem{yunus2013fluid}
+Y.~Cengel and J.~Cimbala.
+\newblock {\em {Fluid Mechanics Fundamentals and Applications}}.
+\newblock McGraw-Hill Education, 2013.
+
+\bibitem{chandrasekhar2006localization}
+V.~Chandrasekhar, W.~K. Seah, Y.~S. Choo, and H.~V. Ee.
+\newblock Localization in underwater sensor networks: survey and challenges.
+\newblock In {\em Proceedings of the 1st ACM international workshop on
+  Underwater networks}, pages 33--40. ACM, 2006.
+
+\bibitem{chen2014}
+K.~Chen, M.~Ma, E.~Cheng, F.~Yuan, and W.~Su.
+\newblock A {Survey} on {MAC} protocols for underwater wireless sensor
+  networks.
+\newblock Number~99, pages 1--15. 2014.
+
+\bibitem{climent2014underwater}
+S.~Climent, A.~Sanchez, J.~V. Capella, N.~Meratnia, and J.~J. Serrano.
+\newblock {Underwater Acoustic Wireless Sensor Networks: Advances and Future
+  Trends in Physical, MAC and Routing Layers}.
+\newblock {\em Sensors}, 14(1):795--833, 2014.
+
+\bibitem{Co87}
+C.~J. Colbourn.
+\newblock {\em {The Combinatorics of Network Reliability}}.
+\newblock Oxford University Press, Inc., New York, USA, 1987.
+
+\bibitem{cormen2001introduction}
+T.~H. Cormen, C.~E. Leiserson, R.~L. Rivest, C.~Stein, et~al.
+\newblock {\em Introduction to algorithms}.
+\newblock {3rd Edition, MIT press}, Cambridge, 2009.
+
+\bibitem{el1988complexity}
+E.~S. Elmallah and C.~J. Colbourn.
+\newblock The complexity of some edge deletion problems.
+\newblock {\em IEEE Transactions on Circuits and Systems}, 35(3):354--362,
+  1988.
+
+\bibitem{erol2011performance}
+M.~Erol, S.~Oktug, L.~Vieira, and M.~Gerla.
+\newblock Performance evaluation of distributed localization techniques for
+  mobile underwater acoustic sensor networks.
+\newblock {\em Ad Hoc Networks}, 9(1):61--72, 2011.
+
+\bibitem{erol2008multi}
+M.~Erol, F.~Vieira, A.~Caruso, F.~Paparella, M.~Gerla, and S.~Oktug.
+\newblock Multi stage underwater sensor localization using mobile beacons.
+\newblock In {\em Second International Conference on Sensor Technologies and
+  Applications, 2008. SENSORCOMM'08.}, pages 710--714. IEEE, 2008.
+
+\bibitem{Erol:2007}
+M.~Erol, L.~F.~M. Vieira, and M.~Gerla.
+\newblock Localization with dive'n'rise (dnr) beacons for underwater acoustic
+  sensor networks.
+\newblock In {\em Proceedings of the Second Workshop on Underwater Networks},
+  WuWNet '07, pages 97--100, New York, NY, USA, 2007. ACM.
+
+\bibitem{Farrell2012}
+Alan~C. F. and Jun P.
+\newblock Performance of {IEEE} 802.11 {MAC} in underwater wireless channels.
+\newblock {\em Procedia Computer Science}, 10(0):62 -- 69, 2012.
+
+\bibitem{fair2006optical}
+N.~Fair, A.~Chave, L.~Freitag, J.~Preisig, S.~White, D.~Yoerger, and
+  F.~Sonnichsen.
+\newblock Optical modem technology for seafloor observatories.
+\newblock In {\em OCEANS 2006}, pages 1--6. IEEE, 2006.
+
+\bibitem{freitag2001acoustic}
+L~Freitag, M~Grund, J~Catipovic, D~Nagle, B~Pazol, and J~Glynn.
+\newblock Acoustic communication with small uuvs using a hull-mounted conformal
+  array.
+\newblock In {\em MTS/IEEE Conference and Exhibition OCEANS, 2001.}, volume~4,
+  pages 2270--2275. IEEE, 2001.
+
+\bibitem{ghosh2008coverage}
+A.~Ghosh and S.~K. Das.
+\newblock Coverage and connectivity issues in wireless sensor networks: A
+  survey.
+\newblock {\em Pervasive and Mobile Computing}, 4(3):303--334, 2008.
+
+\bibitem{giantsis2011comparison}
+C.~Giantsis and A.~A. Economides.
+\newblock Comparison of routing protocols for underwater sensor networks: a
+  survey.
+\newblock {\em International Journal of Communication Networks and Distributed
+  Systems}, 7(3):192--228, 2011.
+
+\bibitem{gkikopouli2012survey}
+A.~Gkikopouli, G.~Nikolakopoulos, and S.~Manesis.
+\newblock A survey on underwater wireless sensor networks and applications.
+\newblock In {\em 20th Mediterranean Conference on Control \& Automation (MED)
+  2012}, pages 1147--1154. IEEE, 2012.
+
+\bibitem{golumbic2004algorithmic}
+M.~C. Golumbic.
+\newblock {\em Algorithmic graph theory and perfect graphs}, volume~57.
+\newblock North-Holland Publishing Co., Amsterdam, Netherland, 2004.
+
+\bibitem{heidemann2012underwater}
+J.~Heidemann, M.~Stojanovic, and M.~Zorzi.
+\newblock Underwater sensor networks: applications, advances and challenges.
+\newblock {\em Philosophical Transactions of the Royal Society A: Mathematical,
+  Physical and Engineering Sciences}, 370(1958):158--175, 2012.
+
+\bibitem{isik2009three}
+M.~T. Isik and O.~B. Akan.
+\newblock A three dimensional localization algorithm for underwater acoustic
+  sensor networks.
+\newblock {\em IEEE Transactions on Wireless Communications}, 8(9):4457--4463,
+  2009.
+
+\bibitem{Tree2014}
+M.~A. Islam and E.~S. Elmallah.
+\newblock {Tree Bound on Probabilistic Connectivity of Underwater Sensor
+  Networks}.
+\newblock In {\em The 13th IEEE WLN workshop 2014 (To appear)}.
+
+\bibitem{lee2010pressure}
+U.~Lee, P.~Wang, Y.~Noh, F.~Vieira, M.~Gerla, and J.~Cui.
+\newblock Pressure routing for underwater sensor networks.
+\newblock In {\em 2010 Proceedings IEEE INFOCOM}, pages 1--9. IEEE, 2010.
+
+\bibitem{noh2013vapr}
+Y.~Noh, U.~Lee, P.~Wang, B.~S.~C. Choi, and M.~Gerla.
+\newblock Vapr: Void-aware pressure routing for underwater sensor networks.
+\newblock {\em Mobile Computing, IEEE Transactions on}, 12(5):895--908, 2013.
+
+\bibitem{partan2007survey}
+J.~Partan, J.~Kurose, and B.~N. Levine.
+\newblock A survey of practical issues in underwater networks.
+\newblock {\em ACM SIGMOBILE Mobile Computing and Communications Review},
+  11(4):23--33, 2007.
+
+\bibitem{petrioli2008comparative}
+C.~Petrioli, R.~Petroccia, and M.~Stojanovic.
+\newblock A comparative performance evaluation of {MAC} protocols for
+  underwater sensor networks.
+\newblock In {\em OCEANS 2008}, pages 1--10. IEEE, 2008.
+
+\bibitem{pompili2006deployment}
+D.~Pompili, T.~Melodia, and I.~F. Akyildiz.
+\newblock Deployment analysis in underwater acoustic wireless sensor networks.
+\newblock In {\em Proceedings of the 1st ACM international workshop on
+  Underwater networks}, pages 48--55. ACM, 2006.
+
+\bibitem{pompili2006routing}
+D.~Pompili, T.~Melodia, and I.~F. Akyildiz.
+\newblock Routing algorithms for delay-insensitive and delay-sensitive
+  applications in underwater sensor networks.
+\newblock In {\em Proceedings of the 12th annual international conference on
+  Mobile computing and networking}, pages 298--309. ACM, 2006.
+
+\bibitem{proskurowski1984separating}
+A.~Proskurowski.
+\newblock Separating subgraphs in \textit{k}-trees: {Cables} and caterpillars.
+\newblock {\em Discrete Mathematics}, 49(3):275--285, 1984.
+
+\bibitem{pu2013comparing}
+L.~Pu, Y.~Luo, H.~Mo, Z.~Peng, J.~Cui, and Z.~Jiang.
+\newblock {Comparing underwater MAC protocols in real sea experiment}.
+\newblock In {\em IFIP Networking Conference, 2013}, pages 1--9. IEEE, 2013.
+
+\bibitem{ren2012performance}
+Y.~Ren, W.~K. Seah, and P.l~D. Teal.
+\newblock Performance of pressure routing in drifting {3D} underwater sensor
+  networks for deep water monitoring.
+\newblock In {\em Proceedings of the seventh ACM international conference on
+  underwater networks and systems}, page~28. ACM, 2012.
+
+\bibitem{reza2009robust}
+A.~Reza and J.~Harms.
+\newblock Robust grid-based deployment schemes for underwater optical sensor
+  networks.
+\newblock In {\em IEEE 34th Conference on Local Computer Networks, 2009. LCN
+  2009.}, pages 641--648. IEEE, 2009.
+
+\bibitem{robertson1986graph}
+N.~Robertson and P.~D. Seymour.
+\newblock {Graph minors. II. Algorithmic aspects of tree-width}.
+\newblock {\em {Journal of Algorithms}}, 7(3):309--322, 1986.
+
+\bibitem{senel2013autonomous}
+F.~Senel, K.~Akkaya, and T.~Yilmaz.
+\newblock {Autonomous deployment of sensors for maximized coverage and
+  guaranteed connectivity in Underwater Acoustic Sensor Networks}.
+\newblock In {\em 2013 IEEE 38th Conference on Local Computer Networks (LCN)},
+  pages 211--218. IEEE, 2013.
+
+\bibitem{shier1991network}
+D.~R. Shier.
+\newblock {\em Network reliability and algebraic structures}.
+\newblock Clarendon Press, New York, USA, 1991.
+
+\bibitem{tan2011survey}
+H.~Tan, R.~Diamant, W.~K. Seah, and M.~Waldmeyer.
+\newblock A survey of techniques and challenges in underwater localization.
+\newblock {\em Ocean Engineering}, 38(14):1663--1676, 2011.
+
+\bibitem{teymorian20093d}
+A.~Y. Teymorian, W.~Cheng, L.~Ma, X.~Cheng, X.~Lu, and Z.~Lu.
+\newblock {3D} underwater sensor network localization.
+\newblock {\em IEEE Transactions on Mobile Computing}, 8(12):1610--1621, 2009.
+
+\bibitem{wald1983steiner}
+J.~A. Wald and C.~J. Colbourn.
+\newblock Steiner trees in probabilistic networks.
+\newblock {\em Microelectronics Reliability}, 23(5):837--840, 1983.
+
+\bibitem{yigitel2011qos}
+M.~A. Yigitel, O.~D. Incel, and C.~Ersoy.
+\newblock {QoS-aware MAC protocols for wireless sensor networks: A survey}.
+\newblock {\em Computer Networks}, 55(8):1982--2004, 2011.
+
+\bibitem{ying2011combining}
+L.~Ying, S.~Shakkottai, A.~Reddy, and S.~Liu.
+\newblock On combining shortest-path and back-pressure routing over multihop
+  wireless networks.
+\newblock {\em IEEE/ACM Transactions on Networking (TON)}, 19(3):841--854,
+  2011.
+
+\bibitem{yunus2010survey}
+F.~Yunus, S.~H. Ariffin, and Y.~Zahedi.
+\newblock {A survey of existing medium access control (MAC) for underwater
+  wireless sensor network (UWSN)}.
+\newblock In {\em 2010 Fourth Asia International Conference on
+  Mathematical/Analytical Modelling and Computer Simulation (AMS)}, pages
+  544--549. IEEE, 2010.
+
+\bibitem{zhou2010efficient}
+Z.~Zhou, J.~Cui, and S.~Zhou.
+\newblock Efficient localization for large-scale underwater sensor networks.
+\newblock {\em Ad Hoc Networks}, 8(3):267--279, 2010.
+
+\bibitem{zhou2011scalable}
+Z.~Zhou, Z.~Peng, J.~Cui, Z.~Shi, and A.~C. Bagtzoglou.
+\newblock Scalable localization with mobility prediction for underwater sensor
+  networks.
+\newblock {\em IEEE Transactions on Mobile Computing}, 10(3):335--348, 2011.
+
+\bibitem{zhu2012survey}
+C.~Zhu, C.~Zheng, L.~Shu, and G.~Han.
+\newblock A survey on coverage and connectivity issues in wireless sensor
+  networks.
+\newblock {\em Journal of Network and Computer Applications}, 35(2):619--632,
+  2012.
+
+\end{thebibliography}

@@ -1,0 +1,191 @@
+\documentclass[letterpaper,conference,fleqn]{IEEEtran}
+%\documentclass[11pt,letterpaper,conference,fleqn]{IEEEtran}
+
+\usepackage{times,epsfig,graphicx,cite,subfig,mathtools,amssymb}
+\usepackage{url}
+
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+% \pagestyle{empty}
+%       \setlength{\parskip}{12pt}
+%       \renewcommand{\baselinestretch}{1.1}
+
+\begin{document}
+
+% ------------------------------------------------------------
+%\newcommand {\softNewpage}     {\newpage}
+\newcommand {\softNewpage}      {}
+
+%\newcommand* {\OmitProof} {}            % Expose this line to omit the
+     % \ifdefined\OmitProof		% part after else
+     % ...
+     % \else
+     % ...
+     % \fi
+% ------------------------------------------------------------
+\newtheorem{lemma}{Lemma}
+% \newtheorem{thm}{Theorem}
+\newtheorem{thm}{{\break \noindent {\bf Theorem}}}
+
+\newcommand{\loc}   	{ {\mathrm {Loc}} }
+\newcommand{\ACONN}   { {\mathrm {A\mbox{-}CONN}} }
+\newcommand{\SCONN}   { {\mathrm {S\mbox{-}CONN}} }
+
+\newcommand{\fConn}   	{ {\mathrm {Conn}} }
+
+\newcommand{\nReq}    { {n_{req}} }
+\newcommand{\boldS}   { \mathbf{S}}
+\newcommand{\DCH}     { {DCH} }
+
+%% -- older paper --
+
+\newcommand{\starEqual}   { {\;{\scriptstyle *} \! =} }
+\newcommand{\plusEqual}   { {\;{\scriptstyle +} \! =} }
+%\newcommand{\plusplus}    { {\scriptstyle \!+\!+} }
+
+%\newcommand{\starEqual}   { {\; {\mathtt *=}} }
+%\newcommand{\plusEqual}   { {\; \mathtt{+=}} }
+
+% --------------------
+\newcommand{\set}[1]    {{ \{ #1 \} }}
+\newcommand{\iin}[1]    {\hspace*{#1in}}
+
+\newcommand{\ol}[1]     {\overline{#1}}
+
+\newcommand{\Prob}[1]   { {\bf \mathrm{Prob}} \left[ #1 \right] }
+\newcommand{\aPr}	{ {\mathrm  {Pr}} }
+
+\newcommand {\nwline} {\hfill\break}
+% ------------------------------------------------------------
+%	\pagestyle{myheadings}
+%	\markboth{{\tt {E. Elmallah (draft)} \hfill}}
+%	          {{\tt {E. Elmallah (draft)} \hfill}}
+%
+%	\begin{minipage}[t]{4in} \vspace*{-.5in}
+%	{\small \tt submitted to ....} \vspace{.5in}
+%	\end{minipage}
+%
+% ------------------------------------------------------------
+\title {
+       Tree Bound on Probabilistic Connectivity of Underwater Sensor Networks
+}
+\author {
+        \IEEEauthorblockN{Md Asadul Islam}
+	\IEEEauthorblockA{
+                Department of Computing Science \\
+                University of Alberta \\
+                Edmonton, T6G 2E8, Canada\\
+                E-Mail: mdasadul@ualberta.ca
+        }
+	\and
+        \IEEEauthorblockN{Ehab S. Elmallah}
+	\IEEEauthorblockA{
+                Department of Computing Science \\
+                University of Alberta \\
+                Edmonton, T6G 2E8, Canada\\
+                E-Mail: elmallah@ualberta.ca
+        }
+}
+%	\date{March 21, 2014}
+%	\thanks{This research is supported by NSERC Canada under grant
+%		number OGP 36899.}
+\maketitle
+\thispagestyle{empty}
+% --------------------
+%
+\begin{abstract}
+This paper considers Underwater Sensor Networks (UWSNs) with unanchored
+nodes that can move freely with water currents.
+%
+Thus, node locations at any instant can only be specified probabilistically.
+%
+When connectivity among some of the sensor nodes is required to perform
+a given function, the problem of estimating the likelihood that the network
+achieves such connectivity arises.
+%
+Our work here formulates a parameterized probabilistic connectivity
+problem that serves this purpose when the network contains both sensor nodes
+and relay nodes.
+%
+We show an exact dynamic programming algorithm for solving the problem
+on networks with tree-like structure; 
+the algorithm yields lower bounds on the solution of
+the problem on any arbitrary network.
+%
+The obtained simulation results investigate the gap between our obtained
+lower bounds and exact solutions on small networks, as well as
+the usefulness of our method in analyzing the effect of adding relay nodes
+to the network.
+\end{abstract}
+%
+% ------------------------------
+\ifdefined\OmitProof
+%
+\else
+\nwline
+\begin{IEEEkeywords}
+Underwater sensor networks,
+probabilistic connectivity,
+probabilistic graphs.
+\end{IEEEkeywords}
+\fi
+% ------------------------------
+% ------------------------------------------------------------
+
+%\section{Introduction}  {\bf To be completed}
+\input{sec-intro.tex}
+
+%\newpage
+\input{sec-model.tex}
+
+%\section{Main Algorithm} {\bf To be completed}
+\input{sec-alg}
+
+%\section{Simulation Results} {\bf To be completed}
+\input{sec-sim.tex}
+
+% ------------------------------------------------------------
+\section {Concluding Remarks}
+%
+Quantifying the likelihood that a sufficient number of sensor nodes
+is connected to a sink node in a given UWSN is a challenging problem for
+networks with semi-mobile and mobile nodes.
+%
+Our work here adopts a flexible probabilistic graph model to formulate
+a class of parameterized network connectivity problems.
+%
+The problem setting allows the network to utilize both sensor nodes
+and relay nodes.
+%
+For scenarios where the model is exact, we show that the exact
+probabilistic connectivity can be computed efficiently for tree-like
+networks.
+%
+Our simulation results show the usefulness of the algorithm in
+computing efficient lower bounds on the solution of any arbitrary
+network. Scenarios with deployed relay nodes are also analyzed.
+%
+Future work will consider obtaining stronger bounds of the formulated
+problems.
+
+% ------------------------------------------------------------
+
+%\nwline
+%\centerline{\sc Acknowledgment}
+%\section*{Acknowledgment}
+% This research is supported by NSERC Canada.
+% ------------------------------------------------------------
+%	\newpage
+
+% Styles: latex8, unsrt, IEEEtranS.bst
+%
+\bibliographystyle{IEEEtran}
+\bibliography{tree-UWSN}
+
+%% \bibliography{exposure,00bib/mypapers,00bib/wireless-sensor,00bib/rel}
+
+%% \bibliography{00bib/mypapers,00bib/qos,00bib/rel,00bib/general,00bib/wireless-sensor}
+
+% ============================================================
+\end{document}
